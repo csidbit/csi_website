@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Indie+Flower&family=Lora:wght@400;500;600&family=Love+Light&family=Moon+Dance&family=Roboto+Slab&family=Rowdies&family=Source+Sans+Pro:wght@300&family=Syne+Tactile&family=Titillium+Web&family=Vujahday+Script&display=swap");
+
+@mixin linktag {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #E0E0E0;
+    background-color: #000;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+}
+@mixin aling($textalign,$justifycontent,$alignitem) {
+    text-align: $textalign;
+    justify-content: $justifycontent;
+    align-items: $alignitem;
+}
+@mixin fullscreen {
+    width: 100%;
+    height: 100vh;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -7,54 +25,78 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto Slab", serif;
-  background-color: #E0E0E0;
+  background-color: #28282B ;
   overflow-x: hidden;
 }
-
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 .header {
   width: 100%;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 1.5rem 0;
   z-index: 100;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border-radius: 1rem;
 }
-
-.header .navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.navbar {
+    
+  }
+  .navlinklistbox{
+    display: flex;
+  }
+  .navlinklist{
+    padding: 0 1rem;
+    list-style: none;
+  }
+  .navlinks{
+    text-decoration: none;
+    font-size :0.8rem;
+    font-weight: bold;
+    color: #696969;
+  }
+.landingpage{
+  position: fixed;
+  background-color: #E0E0E0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+.landingpagetext{
+
+}
+.slider{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(61, 61, 74);
+  transform: translateY(100%);
+  z-index: 201;
+}
+.hide{
+  background-color: #E0E0E0;
+  overflow: hidden;
+}
+.hidetext{
+    display: inline-block;
+    transform: translateY(100%);
 }
 
-.header .navbar ul li {
-  padding: 0 1rem;
-  list-style: none;
+.downheader{
+  top: 0;
+  background-color: #000;
 }
-
-.header .navbar ul li a {
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: bold;
-  color: #696969;
-}
-
 .sticky {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1rem 0;
@@ -62,81 +104,21 @@ body {
   margin: 0 4rem;
   border-radius: 1rem;
 }
-
-.container {
+.pagecontent{
+    /* position: fixed; */
+  }
+.container{
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
-  -webkit-box-align: none;
-      -ms-flex-align: none;
-          align-items: none;
 }
-
-.container .b1 {
-  position: absolute;
-  right: -30rem;
-  top: -25rem;
-  width: 90%;
-  z-index: -1;
+.content{
+    
 }
-
-.container .b2 {
-  position: absolute;
-  width: 70%;
-  left: -15rem;
-  top: 30rem;
-  z-index: -1;
-}
-
-.blob {
-  -webkit-filter: drop-shadow(0.5px 0.5px 1px rgba(0, 0, 0, 0.4));
-          filter: drop-shadow(0.5px 0.5px 1px rgba(0, 0, 0, 0.4));
-}
-
-.content {
-  width: 50%;
-}
-
-.content .textcontent {
-  padding: 10rem 2rem;
-  margin: auto;
-}
-
-.content .textcontent h1 {
-  padding: 0 1rem;
-  font-family: 'Bungee', cursive;
-  font-size: 3rem;
-  letter-spacing: 2px;
-}
-
-.content .textcontent p {
-  padding: 1rem;
-}
-
-.content .textcontent a {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  color: #E0E0E0;
-  background-color: #000;
-  border-radius: 0.5rem;
-  margin: 0 1rem;
-}
-
-.content .illustration {
-  width: 40%;
-  height: 50%;
-  position: absolute;
-  right: 5rem;
-  top: 10rem;
-  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
-          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
-}
-
-.yellow {
-  color: gold;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-/*# sourceMappingURL=style.css.map */
+.yellow{
+      color:gold;
+      text-shadow:1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
