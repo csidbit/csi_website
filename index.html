@@ -43,9 +43,10 @@
       <div id="Home" class="container">
         <div class="content">
           <h1>DBIT</h1>
-        <H1>Powered by CSI</H1>
+          <H1>Powered by CSI</H1>
         </div>
       </div>
+      
       <div id="About" class="container">
         <h1>About<span class="yellow">*</span></h1>
       </div>
@@ -58,5 +59,22 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="three.r119.min.js"></script>
+    <script src="animation.js"></script>
+    <script>
+      VANTA.NET({
+        el: "#Home",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xd9f7,
+        backgroundColor: 0x191328,
+        spacing: 17.00
+      })
+      </script>
   </body>
 </html>
