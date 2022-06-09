@@ -10,14 +10,20 @@
   <body>
     <!-- cdn -->
 
+    <!-- partical script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/dee439f8c1.js" crossorigin="anonymous"></script>
     
     <!-- cdn End -->
     <!-- page content -->
     
-    <div id="header" class="header">
+    <!-- <div id="header" class="header">
       <div class="csi-logo">
         <img src="" alt="csi logo" />
       </div>
@@ -30,23 +36,56 @@
           <li class="navlinklist"><a class="navlinks" href="#reachus">REACH US</a></li>
         </ul>
       </div>
+    </div> -->
+    <div id="fullpage-menu" class="container fullpage_menu">
+      <div class="boxshadowdiv">
+        <div class="closemenuicon"><i class="fa-solid fa-xmark"></i></div>
+      <div class="menubox_container">
+        <div class="menubox">
+          <h3>ACTIVITIES</h3>
+          <ul>
+            <li>Talks</li>
+            <li>Workshops</li>
+          </ul>
+        </div>
+        <div class="menubox">
+          <h3>FLAGSHIP EVENTS</h3>
+          <ul>
+            <li>Mumbai Hackathon</li>
+            <li>Game Of Codes</li>
+          </ul>
+        </div>
+        <div class="menubox">
+          <h3>TEAMS</h3>
+          <ul>
+            <li></li>
+            <li>Teams</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu_footer">
+
+      </div>
+      </div>
     </div>
-    <div class="landingpage">
+    <!-- <div class="landingpage">
       <div class="landingpagetext">
       <h1 class="hide"><span class="hidetext">CREATING INNOVATION</span></h1>
       <h1 class="hide"><span class="hidetext">FOR EVERYDAY</span></h1>
       <h1 class="hide"><span class="hidetext">PEOPLE</span></h1>
       </div>
     </div>
-    <div class="slider"></div>
+    <div class="slider"></div> -->
     <div class="pagecontent">
       <div id="Home" class="container">
+        
         <div class="content">
           <h1>DBIT</h1>
           <H1>Powered by CSI</H1>
         </div>
+
       </div>
-      
       <div id="About" class="container">
         <h1>About<span class="yellow">*</span></h1>
       </div>
@@ -63,18 +102,21 @@
     <script src="animation.js"></script>
     <script>
       VANTA.NET({
-        el: "#Home",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0xd9f7,
-        backgroundColor: 0x191328,
-        spacing: 17.00
-      })
+    el: "#Home",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x232343,
+    backgroundColor: 0x50209,
+    points: 8.00,
+    maxDistance: 25.00,
+    spacing: 20.00,
+    showDots: false
+  })
       </script>
   </body>
 </html>

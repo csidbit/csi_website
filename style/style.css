@@ -1,22 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Indie+Flower&family=Lora:wght@400;500;600&family=Love+Light&family=Moon+Dance&family=Roboto+Slab&family=Rowdies&family=Source+Sans+Pro:wght@300&family=Syne+Tactile&family=Titillium+Web&family=Vujahday+Script&display=swap");
 
-@mixin linktag {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    color: #E0E0E0;
-    background-color: #000;
-    border-radius: 0.5rem;
-    margin: 0 1rem;
-}
-@mixin aling($textalign,$justifycontent,$alignitem) {
-    text-align: $textalign;
-    justify-content: $justifycontent;
-    align-items: $alignitem;
-}
-@mixin fullscreen {
-    width: 100%;
-    height: 100vh;
-}
 html {
   scroll-behavior: smooth;
 }
@@ -25,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto Slab", serif;
-  background-color: #28282B ;
+  background-color: #0d0c11 ;
   overflow-x: hidden;
 }
 * {
@@ -33,7 +16,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-.header {
+/* .header {
   width: 100%;
   position: fixed;
   display: flex;
@@ -103,14 +86,55 @@ body {
   width: 90%;
   margin: 0 4rem;
   border-radius: 1rem;
+} */
+
+.fullpage_menu{
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
-.pagecontent{
-    /* position: fixed; */
-  }
+.boxshadowdiv{
+  width: 97%;
+  height: 97%;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 5px 5px 5px black ,-3px -3px 5px black;
+}
+.closemenuicon{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  right: 3rem;
+  top: 2rem;
+  z-index: 102;
+  padding: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.3rem;
+}
+.menubox_container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  transform:translateY(5rem);
+  padding: 3rem;
+}
+.menubox{
+  padding: 2rem;
+  margin: 0 auto;
+  color: rgb(239, 239, 169);
+  
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
 .container{
   width: 100%;
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
