@@ -8,8 +8,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto Slab", serif;
-  background-color: #0d0c11 ;
+  background-color: black ;
   overflow-x: hidden;
+  color: aliceblue;
 }
 * {
   padding: 0;
@@ -26,7 +27,6 @@ body {
   padding: 1.5rem 0;
   z-index: 100;
   transition: all 0.5s;
-  border-radius: 1rem;
 }
 .navbar {
 }
@@ -43,94 +43,7 @@ body {
     font-weight: bold;
     color: #696969;
 }
-.landingpage{
-  position: fixed;
-  background-color: #E0E0E0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 200;
-}
-.landingpagetext{
 
-}
-.slider{
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  background-color: rgb(61, 61, 74);
-  transform: translateY(100%);
-  z-index: 201;
-}
-.hide{
-  background-color: #E0E0E0;
-  overflow: hidden;
-}
-.hidetext{
-    display: inline-block;
-    transform: translateY(100%);
-}
-
-.downheader{
-  top: 0;
-  background-color: #000;
-}
-.sticky {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 1rem 0;
-  width: 90%;
-  margin: 0 4rem;
-  border-radius: 1rem;
-}
-
-.fullpage_menu{
-  z-index: 100;
-  position: fixed;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.9);
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-.boxshadowdiv{
-  width: 97%;
-  height: 97%;
-  padding: 1rem;
-  border-radius: 0.2rem;
-  box-shadow: 5px 5px 5px black ,-3px -3px 5px black;
-}
-.closemenuicon{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  right: 3rem;
-  top: 2rem;
-  z-index: 102;
-  padding: 0.7rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 0.3rem;
-}
-.menubox_container{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  position: relative;
-  transform:translateY(5rem);
-  padding: 3rem;
-}
-.menubox{
-  padding: 2rem;
-  margin: 0 auto;
-  color: rgb(239, 239, 169);
-  
-  /* background-color: rgba(255, 255, 255, 0.2); */
-}
 .container{
   width: 100%;
   height: 100vh;
