@@ -10,7 +10,7 @@ body {
   font-family: "Roboto Slab", serif;
   background-color: black ;
   overflow-x: hidden;
-  color: aliceblue;
+  color: beige;
 }
 * {
   padding: 0;
@@ -52,18 +52,20 @@ body {
   align-items: center;
   text-align: center;
 }
-.about{
-  /* display:flex; */
+.space{
+  margin-bottom: 10rem;
+}
+.about , .event{
+  display:flex;
+  justify-content: space-around;
 }
 .title_container{
   padding: 1rem;
-  /* position: absolute; */
-  float:left;
   justify-content: center;
 }
 .screen{
   width: 85%;
-  height: 85vh;
+  height: 100%;
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: #0b0b0c solid 2px;
@@ -84,13 +86,22 @@ body {
 }
 .subtitle{
   transform: translateY(-3.5rem);
+  position: relative;
 }
 .goal_container{
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
+  justify-content: space-around;
+}
+.right_goal_container{
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+
 }
 .goal_image{
   padding: 2rem;
+  border: #696969 solid;
 }
 .goals{
   width: 50%;
