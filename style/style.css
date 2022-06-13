@@ -138,9 +138,13 @@ body {
 }
 
 /* Footer */
+.footer{
+  background-color: #0b0b0c;
+  padding: 4rem 10rem;
+}
+
 .footer_container{
   display: flex;
   align-content: center;
   justify-content: space-between;
-  margin: 4rem 10rem;
 }
