@@ -64,33 +64,107 @@ body {
   justify-content: center;
 }
 .screen_container{
-  height: 200vh;
+  height: 100%;
 }
 .screen{
-  width: 85%;
-  height: 90vh;
+  width: 90%;
   padding: 0.5rem;
-  margin-bottom: 5rem;
+  margin: 5rem 0;
   border-radius: 0.5rem;
   border: #0b0b0c solid 2px;
   float: right;
   transform: translateX(-1rem);
 }
 .dots{
-  padding: 0.2rem 0;
-  float: right;
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: right;
+  border-bottom: 2px solid #0b0b0c;
+}
+.fa-circle{
+  padding: 0 2px;
+  padding-bottom: 0.3rem;
 }
 .frame{
   width: 100%;
   height: 100%;
   padding: 2rem;
+  position: relative;
   border-radius: 0.5rem;
   background-color: #0b0b0c;
   transform: translateY(2rem);
 }
-.subtitle{
-  transform: translateY(-3.5rem);
+.tl_container{
+  display: flex;
+  justify-content: center;
   position: relative;
+}
+.tl{
+  width: 80%;
+  height: auto;
+  min-width: 400px;
+}
+.tl ul{
+  list-style: none;
+}
+.tl_element{
+  padding: 2rem;
+  margin: 1rem 0;
+  background-color:#0b0b0c;
+  border-radius: 0.5rem;
+}
+.tl_element h2{
+  color: brown;
+}
+.tl::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  background-color: #0b0b0c;
+}
+@media only screen and (min-width:768px){
+  .tl::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: #0b0b0c;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .tl ul li::after{
+    content: "";
+    position: absolute;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: brown;
+    top: 10px;
+  }
+  .tl ul li:nth-child(odd)::after{
+    transform: translate(50%,-50%);
+    right: -30px;
+  }
+  .tl ul li:nth-child(even)::after{
+    transform: translate(-50%,50%);
+    left: -30px;
+  }
+  .tl ul li{
+    width: 50%;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  .tl ul li:nth-child(odd){
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+  }
+  .tl ul li:nth-child(even){
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
+
 }
 .goal_container{
   padding: 2rem;
@@ -112,9 +186,8 @@ body {
   height: 100%;
 }
 
-.yellow{
-      color:gold;
-      text-shadow:1px 1px 1px rgba(0, 0, 0, 0.4);
+.red{
+  color:brown;  
 }
 
 .content {
@@ -122,7 +195,7 @@ body {
   margin-left: 40px;
   margin-bottom: 20px;
   margin-top: 20px;
-  width: 400px;
+  width: 350px;
   height: 300px;
   display: flex;
   align-items: center;
