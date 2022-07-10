@@ -61,8 +61,7 @@ body {
   text-align: center;
 }
 .space{
-  transform: translateY(5rem);
-  /* margin-top: 5rem; */
+  padding-top: 5rem;
 }
 .about , .event{
   display:flex;
@@ -318,7 +317,7 @@ justify-content: center;
 .grid{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-gap: 1rem;
+  gap: 1.5rem;
 }
 .workshop_container,.talks_container{
   margin: 1rem;
@@ -331,4 +330,11 @@ justify-content: center;
   border: 2px solid var(--border-color);
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+}
+.member{
+  padding: 1rem;
+  margin: auto;
+}
+.member_desc{
+  text-align: center;
 }
