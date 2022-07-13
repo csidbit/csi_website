@@ -58,26 +58,48 @@
     <div class="space">
       <div class="reachus">
         <h3>GET IN TOUCHE`</h3>
-        <div class="reachout_form">
-          <form action="">
-            <input type="hidden" name="_subject" value="CSI WEBSITE RESPONSE">
-            <input type="email" placeholder="email" required>
-            <textarea name="message" id="" cols="30" rows="10" required ></textarea>
-            <button type="submit">SEND</button>
-          </form>
-        </div>
-        <div class="map_contact">
-          <div class="map">
-            <img src="" alt="DBIT location">
+        <div class="reachus_section">
+          <div class="reachout_form">
+            <form action="https://formsubmit.co/7fc77b31f1c3e4570c5d6678c513c7f7" method="POST">
+              <!-- _subject -->
+              <input type="hidden" name="_subject" value="CSI WEBSITE RESPONSE">
+              <!-- honeypot -->
+              <input type="text" name="_honey" style="display:none">
+              <!-- disable recaptcha -->
+              <input type="hidden" name="_captcha" value="false">
+              <!-- success page -->
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/form_success.html">
+
+              <div class="input">
+                <label for="name">Name</label>
+                <input class="inputfield" type="text" name="name" placeholder="name" required>
+              </div>
+              <div class="input">
+                <label for="email">Email</label>
+                <input class="inputfield" type="email" name="email" placeholder="email" required>
+              </div>
+              <div class="input">
+                <textarea class="inputfield" name="message" cols="50" rows="10" placeholder="Write your message here" required></textarea>
+              </div>
+              <div class="">
+                <button class="submit_btn" type="submit">send</button>
+              </div>
+            </form>
           </div>
-          <div class="contacts">
-            <h4>CONTACT INFO</h4>
-            <div class="">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vel.</p>
-              <br>
-              <p>mail@mail.com</p>
-              <br>
-              <p>+91 7674358335</p>
+          <div class="map_contact">
+            <div class="map">
+              <img src="" alt="DBIT location">
+            </div>
+            <div class="contacts">
+              <h4>CONTACT INFO</h4>
+              <div class="">
+                <!-- <p>ADDRESS>>>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, vel.</p> -->
+                <a href="http://maps.google.com/?q=Don Bosco Institute of Technology, Mumbai, DON BOSCO INSTITUTE OF TECHNOLOGY, Amar Nagar, Kurla West, Kurla, Mumbai, Maharashtra" target="_blank" rel="noopener noreferrer">Address...</a>
+                <br>
+                <a href="mailto:hevek93489@satedly.com">hevek93489@satedly.com</a>
+                <br>
+                <a href="tel:8346285742">+91 8346285742</a>
+              </div>
             </div>
           </div>
         </div>
