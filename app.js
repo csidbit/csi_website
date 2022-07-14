@@ -15,7 +15,7 @@ window.addEventListener("scroll",function(){
         header.style.top="-20rem";
     }else{
         header.style.top="0";
-        header.style.backgroundColor="black";
+        header.style.backgroundColor="#040406";
     }
     lastscrolltop=scrolltop;
 })

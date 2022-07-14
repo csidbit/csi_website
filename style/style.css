@@ -3,10 +3,8 @@ html {
   scroll-behavior: smooth;
 }
 :root{
-  /* --primary-color:#141416; */
-  --primary-color:black;
-  /* --secondary-color:#0b0b0c; */
-  --secondary-color:#040406;
+  --primary-color:#040406;
+  --secondary-color:#0b0b0c;
   --tertiary-color:brown;
   --border-color:#373737;
 
@@ -47,9 +45,9 @@ body {
 }
 .navlinks{
     text-decoration: none;
-    font-size :0.8rem;
+    font-size :0.9rem;
     font-weight: bold;
-    color: #696969;
+    color: #797575;
 }
 
 .container{
@@ -263,10 +261,34 @@ justify-content: center;
 /* Footer */
 .footer{
   background-color: var(--secondary-color);
-  padding: 4rem 10rem;
   margin-top: 5rem;
 }
+.footer_container{
+  display: flex;
+  justify-content: space-around;
+}
+.social_links ul{
+  display: flex;
+}
+.other_organisation{
+  display: flex;
+  justify-content: center;
+}
+.footer_links{
+  display: flex;
+  justify-content: space-around;
+}
+.list{
+  list-style:none;
+  /* display: flex; */
+  padding: 0.5rem 0;
+}
 
+.footer_text{
+  padding-bottom: 0.5rem;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
 
 .border_right{
   border-right: 2px solid var(--border-color);
@@ -378,6 +400,7 @@ justify-content: center;
   background: transparent;
   color: white;
   cursor: pointer;
+  border: none;
   border-bottom: 5px solid var(--border-color);
 }
 .map_contact{
