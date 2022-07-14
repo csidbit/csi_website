@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 :root{
-  --primary-color:#232325;
+  --primary-color:#1c1c1d;
   --secondary-color:#0b0b0c;
   --tertiary-color:brown;
   --border-color:#373737;
@@ -334,20 +334,28 @@ justify-content: center;
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 1.5rem;
 }
 .workshop_container,.talks_container{
-  margin: 1rem;
+  margin: 0.5rem;
 }
 .workshop ,.talks{
-  padding: 1rem;
+  padding: 0 1rem;
   justify-content: space-around;
   text-align: center;
   background-color: var(--secondary-color);
   border: 2px solid var(--border-color);
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  border-radius: 8px;
+}
+.workshop_img{
+  border-radius: 8px;
+  max-width: 460px;
+  max-height: 550px;
+  width: auto;
+  height: auto;
 }
 .member{
   padding: 1rem;
