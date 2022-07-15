@@ -357,7 +357,7 @@ justify-content: center;
   margin: 0.5rem;
 }
 .workshop ,.talks{
-  padding: 0 1rem;
+  padding: 1rem;
   justify-content: space-around;
   text-align: center;
   background-color: var(--secondary-color);
@@ -373,6 +373,16 @@ justify-content: center;
   width: auto;
   height: auto;
 }
+/* .text_overlap{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  color: beige;
+  margin: 0;
+} */
 .member{
   padding: 1rem;
   margin: auto;
