@@ -3,10 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 :root{
-  --primary-color:#1c1c1d;
+  --primary-color:#181818;
   --secondary-color:#0b0b0c;
   --tertiary-color:brown;
-  --border-color:#373737;
+  --border-color:#393939;
 
 }
 body {
@@ -264,32 +264,48 @@ justify-content: center;
   margin-top: 5rem;
 }
 .footer_container{
-  display: flex;
+  padding: 3rem 0;
   justify-content: space-around;
 }
 .social_links ul{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .other_organisation{
   display: flex;
   justify-content: center;
 }
-.footer_links{
+.footer_links_container{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+.footer_links{
+  padding: 1rem 2rem;
 }
 .list{
   list-style:none;
-  /* display: flex; */
-  padding: 0.5rem 0;
+  text-align: center;
 }
-
+.list li{
+  padding: 0.5rem;
+}
+.list li a{
+  color:white;
+  text-decoration: none;
+}
+.list li a h3{
+  color: var(--tertiary-color);
+}
 .footer_text{
   padding-bottom: 0.5rem;
   text-align: center;
   background-color: var(--secondary-color);
 }
-
+.brand{
+  position: absolute;
+  padding: 1rem;
+}
 .border_right{
   border-right: 2px solid var(--border-color);
 }
@@ -371,7 +387,7 @@ justify-content: center;
   width: 50%;
   margin: auto;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid var(--border-color);
+  border-bottom: 3px solid var(--tertiary-color);
 }
 .reachus_section{
   display: flex;
@@ -398,10 +414,11 @@ justify-content: center;
   width: 100%;
   background: transparent;
   outline: none;
-  border: solid 1px var(--border-color);
+  border: solid 2px var(--border-color);
   padding: 1rem;
   margin: 1rem auto;
   resize: none;
+  border-radius: 0.3rem;
 }
 .submit_btn{
   padding: 0.5rem 1rem;
@@ -409,7 +426,7 @@ justify-content: center;
   color: white;
   cursor: pointer;
   border: none;
-  border-bottom: 5px solid var(--border-color);
+  border-bottom: 5px solid var(--tertiary-color);
 }
 .map_contact{
   width: 60%;
