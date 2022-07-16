@@ -171,9 +171,6 @@ justify-content: center;
   width: 10px;
   background-color: var(--secondary-color);
 }
-
-
-/* ******************************* */
 @media only screen and (min-width:768px){
   .tl::before{
     content: "";
@@ -217,9 +214,6 @@ justify-content: center;
   }
 
 }
-
-/* ************************* */
-
 .goal_container{
   padding: 2rem;
   display: flex;
@@ -262,7 +256,7 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* box-shadow: 0px 0px 10px rgba(0,0,0,0.3); */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
   transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
