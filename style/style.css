@@ -291,6 +291,11 @@ justify-content: center;
 .footer_links{
   padding: 1rem 2rem;
 }
+.footer_logo{
+  width: 0.8in;
+  height: 0.8in;
+
+}
 .list{
   list-style:none;
   text-align: center;
