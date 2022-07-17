@@ -1,8 +1,0 @@
-.team-imageVen{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  width: 300px;  
-height: auto;  
-text-align: center;  
-padding: 15px;  
-}
