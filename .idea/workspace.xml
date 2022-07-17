@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8091dcfa-b605-408a-a639-b1bcf5e99771" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/csi-temp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +54,8 @@
       <workItem from="1655046351033" duration="8148000" />
       <workItem from="1658051250731" duration="4592000" />
       <workItem from="1658056235374" duration="6540000" />
-      <workItem from="1658066650836" duration="310000" />
+      <workItem from="1658066650836" duration="1661000" />
+      <workItem from="1658068366900" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="added : what we do panel section">
       <created>1655054976240</created>
@@ -64,15 +71,35 @@
       <option name="project" value="LOCAL" />
       <updated>1655055634038</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="counter added">
+      <created>1658067157571</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658067157571</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added : what we do panel section" />
     <MESSAGE value="added : what we do panel section index" />
-    <option name="LAST_COMMIT_MESSAGE" value="added : what we do panel section index" />
+    <MESSAGE value="counter added" />
+    <option name="LAST_COMMIT_MESSAGE" value="counter added" />
   </component>
 </project>
