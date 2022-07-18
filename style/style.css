@@ -14,9 +14,8 @@ body {
   padding: 0;
   font-family: "Roboto Slab", serif;
   background-color: var(--primary-color);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   color: beige;
-  
 }
 
 
@@ -25,14 +24,16 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+.about{
+  display: flex;
+  justify-content: center;
+}
 .heading{
-    
   height:450px;
   width:95%;
   margin-top: 10%;
   margin-left: 2%;
   border: 2px solid rgb(98, 96, 96);
-
 }
 .box1 h1{
   padding-top:120px ;
@@ -55,18 +56,20 @@ body {
 }
 .box2{
   background-color:  #1b1c1e;
+  padding: 1rem;
   width: 20%;
   height: 75%;
-  margin-top: -43%;
+  margin-top: -47%;
   margin-left: 44%;
   border-radius: 10px;
   box-shadow: 0px 0px 4px 4px rgb(16, 16, 16);
-  
 }
 .box3{
   background-color: #1b1c1e;
+  padding: 1rem;
+
   width: 20%;
-  height: 75%;
+  /* height: 75%; */
   margin-top: 1%;
   margin-left: 44%;
   border-radius: 10px;
@@ -74,8 +77,10 @@ body {
 }
 .box4{
   background-color:  #1b1c1e;
+  padding: 1rem;
+
   width: 20%;
-  height: 75%;
+  /* height: 75%; */
   margin-top: -45%;
   margin-left: 65%;
   border-radius: 10px;
@@ -108,12 +113,18 @@ body {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   z-index: 100;
   transition: all 0.5s;
-  
 }
 .navbar {
+}
+.csi_logo{
+  position: absolute;
+  left: 1rem;
+}
+.csi_logo img{
+  aspect-ratio: 2;
 }
 .navlinklistbox{
     display: flex;
@@ -136,20 +147,9 @@ body {
   align-items: center;
   text-align: center;
 }
-.container{
-  width: 100%;
-  height: 25vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+
 .space{
   padding-top: 5rem;
-}
-.about , .event{
-  display:flex;
-  justify-content: space-between;
 }
 .about_section_container{
   display: flex;
@@ -210,6 +210,8 @@ justify-content: center;
   border-radius: 0.5rem;
   background-color: var(--secondary-color);
   transform: translateY(2rem);
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -222,24 +224,25 @@ justify-content: center;
 
 .containers{
   max-width: 1100px;
-  margin-left: 12%;
-  overflow: auto;
   display: flex;
   flex-direction: column;
-  height: 30vh;
+  /* height: 30vh; */
 }
 
 .counters-container{
   background: #181818;
   color: white;
-  padding: 40px 20px;
+  margin-top: 25rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
   /*border-top: 3px lightblue solid;*/
   /*border-bottom: 3px lightblue solid;*/
 }
 
 .counters-container .containers{
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 1.5rem;
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
 }
@@ -247,7 +250,6 @@ justify-content: center;
 .counters-container i {
   color: #626b8f;
   margin-bottom: 20px;
-  /*size: 20px;*/
   font-size: 2rem;
 }
 
@@ -376,10 +378,10 @@ justify-content: center;
 }
 
 .content {
-  margin-right: 40px;
+  /* margin-right: 40px;
   margin-left: 40px;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 20px; */
   width: 350px;
   height: 300px;
   display: flex;
@@ -388,7 +390,13 @@ justify-content: center;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
   transition: all 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+.pannels{
+  justify-content: center;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 2fr 2fr;
 
+}
 .wowpanel{
   align-items: center;
   justify-content: center;
@@ -609,10 +617,50 @@ justify-content: center;
   text-align: center;
   margin: 1rem auto;
 }
+.reach_us h1{
+  width: 20%;
+  margin-left: 1rem;
+  padding-left: 3rem;
+  color: var(--tertiary-color);
+  border-bottom: 2px solid var(--tertiary-color);
+}
 .map iframe{
   width: 90%;
   height: 100%;
 }
 .map_align{
-  padding-left: 2in;
+  width: 70%;
+display: flex;
+justify-content: center;
+}
+.map_align iframe{
+  width: 80%;
+  height: 100%;
+}
+.reachus_text{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.reachus_text .contacts{
+  padding: 1rem;
+  text-align: left;
+  width: 30%;
+  
+}
+.contacts .contact_info_details{
+  padding: 1rem  0;
+  width: 80%;
+}
+.contact_info_details a{
+  display: flex;
+  align-items: center;
+  /* padding: 1.5rem 0; */
+  text-decoration: none;
+  color: white;
+}
+.contact_info_details a span i{
+  padding: 1rem;
+  font-size: large;
+  color: var(--tertiary-color);
 }
