@@ -120,11 +120,13 @@ body {
 .navbar {
 }
 .csi_logo{
+  display: flex;
+  align-items: center;
   position: absolute;
   left: 1rem;
 }
 .csi_logo img{
-  aspect-ratio: 2;
+  width: 50%;
 }
 .navlinklistbox{
     display: flex;
@@ -417,8 +419,7 @@ justify-content: center;
   justify-content: center;
   align-items: center;
 }
-.other_organisation{
-  display: flex;
+.other_organisation_images{
   justify-content: center;
 }
 .footer_links_container{
@@ -663,4 +664,32 @@ justify-content: center;
   padding: 1rem;
   font-size: large;
   color: var(--tertiary-color);
+}
+.fa-facebook{
+  font-size: larger;
+  color: #4267B2;
+}
+.fa-twitter{
+  font-size: larger;
+  color: #1DA1F2;
+}
+.fa-github{
+  font-size: larger;
+  color: rgb(125, 125, 125);
+}
+.fa-linkedin-in{
+  font-size: larger;
+  color: #0A66C2;
+}
+.fa-youtube{
+  font-size: larger;
+  color: #FF0000;
+}
+.fa-instagram{
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  /* color-scheme:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); */
+  font-size: larger;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
