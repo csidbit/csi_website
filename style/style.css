@@ -3,10 +3,16 @@ html {
   scroll-behavior: smooth;
 }
 :root{
-  --primary-color:#181818;
-  --secondary-color:#0b0b0c;
+  --primary-color:#0b0b0c;
+  /* --primary-color:#181818; */
+
+  --secondary-color:#181818;
+  /* --secondary-color:#0b0b0c; */
+  
   --tertiary-color:brown;
-  --border-color:#393939;
+
+  --border-color: rgb(98, 96, 96);
+  /* --border-color:#393939; */
 
 }
 body {
@@ -23,6 +29,23 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.scrolltop_div{
+  position: fixed;
+
+  right: 1rem;
+  bottom: 1.5rem;
+}
+.scrolltop_div .scrolltop {
+  padding: 0.5rem 0.7rem;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+}
+.scrolltop_div .scrolltop i{
+  color: white;
+  transform: rotate(-90deg);
+  font-size: x-large;
 }
 .about{
   display: flex;
@@ -126,7 +149,8 @@ body {
   left: 1rem;
 }
 .csi_logo img{
-  width: 50%;
+  width: 3rem;
+  height: 3rem;
 }
 .navlinklistbox{
     display: flex;
@@ -238,8 +262,6 @@ justify-content: center;
   padding: 1rem;
   display: flex;
   justify-content: center;
-  /*border-top: 3px lightblue solid;*/
-  /*border-bottom: 3px lightblue solid;*/
 }
 
 .counters-container .containers{
@@ -419,7 +441,18 @@ justify-content: center;
   justify-content: center;
   align-items: center;
 }
+.other_organisation{
+  position: relative;
+  top: -1rem;
+  left: 2rem;
+}
+.other_organisation h3{
+  padding: 0.3rem;
+  border-bottom: 2px solid var(--tertiary-color);
+}
 .other_organisation_images{
+  padding: 1rem 0;
+  display: flex;
   justify-content: center;
 }
 .footer_links_container{
@@ -436,7 +469,7 @@ justify-content: center;
 }
 .list{
   list-style:none;
-  text-align: center;
+  text-align: left;
 }
 .list li{
   padding: 0.5rem;
@@ -445,13 +478,21 @@ justify-content: center;
   color:white;
   text-decoration: none;
 }
+.list li a i{
+  padding: 0 0.5rem;
+
+}
 .list li a h3{
+  text-align: center;
   color: var(--tertiary-color);
 }
 .footer_text{
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  width: 80%;
+  margin: auto;
   text-align: center;
   background-color: var(--secondary-color);
+  border-top: 2px solid var(--border-color);
 }
 .brand{
   position: absolute;

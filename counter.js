@@ -1,20 +1,16 @@
-const  counters = document.querySelectorAll('.counters');
+const  counters_class = document.querySelectorAll('.counters');
 const speed = 200;
 
-counters.forEach(counter =>{
+counters_class.forEach(curcounter =>{
     const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
+        const target = parseInt(curcounter.getAttribute('data-number'));
+        const initial = parseInt(curcounter.innerText);
 
-        const inc = target / speed;
+        const inc = Math.trunc(target / speed);
 
-        // console.log(count);
-
-        if(count < target){
-            counter.innerText = Math.ceil(count + inc);
-            setTimeout(updateCount, 1);
-        } else{
-            count.innerText = target;
+        if(initial < target){
+            initial.innerText = initial + inc;
+            setTimeout(updateCount, 10);
         }
 
     }

@@ -17,8 +17,17 @@ window.addEventListener("scroll",function(){
         header.style.top="0";
         header.style.backgroundColor="#040406";
     }
+
+    if(scrolltop==0){
+        header.style.backgroundColor='#0b0b0c';
+    }
     lastscrolltop=scrolltop;
 })
 
+var scrolltopbutton = document.getElementById('scrolltop_btn');
+var pos = document.documentElement.scrollTop;
+if(pos>100){
+    scrolltopbutton.style.display='inline';
+}
 
 
