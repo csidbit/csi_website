@@ -30,4 +30,14 @@ if(pos>100){
     scrolltopbutton.style.display='inline';
 }
 
+// activities js 
+document.querySelectorAll('.grid .workshop').forEach(vid =>{
+    vid.onclick = ()=>{
+        document.querySelector('.popup_video').style.display='block';
+        document.querySelector('.popup_video iframe').src=vid.getAttribute('data-src');
+    }
+})
 
+document.querySelector('.popup_video i').onclick=()=>{
+    document.querySelector('.popup_video').style.display='none';
+}
