@@ -613,6 +613,33 @@ justify-content: center;
   right: 7rem;
   top: 3rem;
 }
+.filter_btn{
+  padding: 5px;
+
+}
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 18px;
+  font-size: medium;
+  background-color: beige;
+  cursor: pointer;
+  border-radius: 1cm;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
 /* .text_overlap{
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
@@ -623,6 +650,14 @@ justify-content: center;
   color: beige;
   margin: 0;
 } */
+.filterDiv{
+  display: none;
+  float: left;
+}
+.show{
+  display: block !important;
+  float: left;
+}
 .member{
   padding: 1rem;
   margin: auto;

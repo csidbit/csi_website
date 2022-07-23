@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSI - Activities</title>
-    <link rel="stylesheet" href="style/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSI - Activities</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-    
-      <!-- cdn links -->
+
+  <!-- cdn links -->
 
   <!-- partical script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
@@ -22,7 +24,7 @@
 
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/dee439f8c1.js" crossorigin="anonymous"></script>
-  
+
   <!-- counter -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
@@ -32,28 +34,42 @@
   <!-- waypoint -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <!-- cdn links End -->
-
-    <div id="header" class="header">
-      <div class="navbar">
-        <ul class="navlinklistbox">
-          <li class="navlinklist"><a class="navlinks" href="/index.html">HOME</a></li>
-          <li class="navlinklist">
-            <a class="navlinks" href="/activities.html">ACTIVITIES</a>
-          </li>
-          <li class="navlinklist">
-            <a class="navlinks" href="/flagshipevents.html">FLAGSHIP EVENTS</a>
-          </li>
-          <li class="navlinklist">
-            <a class="navlinks" href="/ourteams.html">OUR TEAM</a>
-          </li>
-          <li class="navlinklist">
-            <a class="navlinks" href="/reachus.html">REACH US</a>
-          </li>
-        </ul>
-      </div>
+  <script defer src="filter.js"></script>
+  <div id="header" class="header">
+    <div class="navbar">
+      <ul class="navlinklistbox">
+        <li class="navlinklist"><a class="navlinks" href="/index.html">HOME</a></li>
+        <li class="navlinklist">
+          <a class="navlinks" href="/activities.html">ACTIVITIES</a>
+        </li>
+        <li class="navlinklist">
+          <a class="navlinks" href="/flagshipevents.html">FLAGSHIP EVENTS</a>
+        </li>
+        <li class="navlinklist">
+          <a class="navlinks" href="/ourteams.html">OUR TEAM</a>
+        </li>
+        <li class="navlinklist">
+          <a class="navlinks" href="/reachus.html">REACH US</a>
+        </li>
+      </ul>
     </div>
+  </div>
 
 
+  <div class="space">
+    <div class="workshop_container">
+      <div>
+        <h1>Workshop</h1>
+        <div class="filter_btn" id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          &nbsp;&nbsp;
+          <button class="btn" onclick="filterSelection('Current')"> Current</button>
+          &nbsp;&nbsp;
+          <button class="btn" onclick="filterSelection('old')"> Old</button>
+        </div>
+        <div class="grid">
+
+<<<<<<< Updated upstream
     <div class="space">
       <div class="workshop_container">
         <div>
@@ -63,9 +79,31 @@
             <img class="workshop_img" data-src="https://www.youtube.com/watch?v=t7DgtvmMAxQ" src="resources\images\old workshops\Copy of Cyber Security.png" alt="workshop">
             <h3 >workshop title</h3>
             <p>workshop title</p>
+=======
+          <div class="workshop filterDiv old">
+            <img class="workshop_img" data-src="https://www.youtube.com/watch?v=t7DgtvmMAxQ"
+              src="resources\images\old workshops\Copy of Cyber Security.png" alt="workshop">
+            <div class="container_date">
+              <div class="container-title-workshop">
+                <h3>workshop title</h3>
+                <p>workshop date</p>
+              </div>
+              <div class="poster-date">
+                <div id="date">12</div>
+                <div id="month">July</div>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              officia ipsam vitae enim alias asperiores, et, rem cum porro
+              impedit fugit ab at odio repellat ut minus, dignissimos
+              quibusdam recusandae autem.
+            </p>
+>>>>>>> Stashed changes
           </div>
-          <div class="workshop">
+          <div class="workshop filterDiv old">
             <img class="workshop_img" src="resources\images\old workshops\Copy of Copy of CPL.png" alt="workshop">
+<<<<<<< Updated upstream
             <h3 >workshop title</h3>
             <p>workshop title</p>
           </div>
@@ -73,174 +111,301 @@
             <img data-src="https://www.youtube.com/watch?v=xLkd2EG0rqE" class="workshop_img" src="resources\images\old workshops\Copy of workshop.jpg" alt="workshop">
             <h3 >workshop title</h3>
             <p>workshop title</p>
+=======
+            <div class="container_date">
+              <div class="container-title-workshop">
+                <h3>workshop title</h3>
+                <p>workshop date</p>
+              </div>
+              <div class="poster-date">
+                <div id="date">12</div>
+                <div id="month">July</div>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              officia ipsam vitae enim alias asperiores, et, rem cum porro
+              impedit fugit ab at odio repellat ut minus, dignissimos
+              quibusdam recusandae autem.
+            </p>
           </div>
-          <div class="workshop">
+          <div class="workshop filterDiv old">
+            <img data-src="https://www.youtube.com/watch?v=xLkd2EG0rqE" class="workshop_img"
+              src="resources\images\old workshops\Copy of workshop.jpg" alt="workshop">
+            <div class="container_date">
+              <div class="container-title-workshop">
+                <h3>workshop title</h3>
+                <p>workshop date</p>
+              </div>
+              <div class="poster-date">
+                <div id="date">12</div>
+                <div id="month">July</div>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              officia ipsam vitae enim alias asperiores, et, rem cum porro
+              impedit fugit ab at odio repellat ut minus, dignissimos
+              quibusdam recusandae autem.
+            </p>
+>>>>>>> Stashed changes
+          </div>
+          <div class="workshop filterDiv old">
             <img class="workshop_img" src="resources\images\old workshops\Copy of photoshop.png" alt="workshop">
+<<<<<<< Updated upstream
             <h3 >workshop title</h3>
             <p>workshop title</p>
+=======
+            <div class="container_date">
+              <div class="container-title-workshop">
+                <h3>workshop title</h3>
+                <p>workshop date</p>
+              </div>
+              <div class="poster-date">
+                <div id="date">12</div>
+                <div id="month">July</div>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              officia ipsam vitae enim alias asperiores, et, rem cum porro
+              impedit fugit ab at odio repellat ut minus, dignissimos
+              quibusdam recusandae autem.
+            </p>
+>>>>>>> Stashed changes
           </div>
-          <div class="workshop">
+          <div class="workshop filterDiv old">
             <img class="workshop_img" src="resources\images\old workshops\Copy of easycode.jpg" alt="workshop">
+<<<<<<< Updated upstream
             <h3 >workshop title</h3>
             <p>workshop title</p>
+=======
+            <div class="container_date">
+              <div class="container-title-workshop">
+                <h3>workshop title</h3>
+                <p>workshop date</p>
+              </div>
+              <div class="poster-date">
+                <div id="date">12</div>
+                <div id="month">July</div>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              officia ipsam vitae enim alias asperiores, et, rem cum porro
+              impedit fugit ab at odio repellat ut minus, dignissimos
+              quibusdam recusandae autem.
+            </p>
+>>>>>>> Stashed changes
           </div>
-          <div class="workshop">
+          <div class="workshop filterDiv old">
             <img class="workshop_img" src="resources\images\old workshops\Copy of Game Development.png" alt="workshop">
+<<<<<<< Updated upstream
             <h3 >workshop title</h3>
             <p>workshop title</p>
+=======
+            <div class="container_date">
+              <div class="container-title-workshop">
+                <h3>workshop title</h3>
+                <p>workshop date</p>
+              </div>
+              <div class="poster-date">
+                <div id="date">12</div>
+                <div id="month">July</div>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              officia ipsam vitae enim alias asperiores, et, rem cum porro
+              impedit fugit ab at odio repellat ut minus, dignissimos
+              quibusdam recusandae autem.
+            </p>
+>>>>>>> Stashed changes
           </div>
-          <div class="workshop">
+          <div class="workshop filterDiv Current">
             <img class="workshop_img" src="resources\images\old workshops\Copy of GOC FIGURE.jpg" alt="workshop">
+<<<<<<< Updated upstream
             <h3 >workshop title</h3>
             <p>workshop title</p>
+=======
+            <div class="container_date">
+              <div class="container-title-workshop">
+                <h3>workshop title</h3>
+                <p>workshop date</p>
+              </div>
+              <div class="poster-date">
+                <div id="date">12</div>
+                <div id="month">July</div>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              officia ipsam vitae enim alias asperiores, et, rem cum porro
+              impedit fugit ab at odio repellat ut minus, dignissimos
+              quibusdam recusandae autem.
+            </p>
+>>>>>>> Stashed changes
           </div>
-          <div class="workshop">
+          <div class="workshop filterDiv Current">
             <img class="workshop_img" src="resources\images\old workshops\Copy of GOC GOG.jpg" alt="workshop">
+<<<<<<< Updated upstream
             <h3 >workshop title</h3>
             <p>workshop title</p>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="talks_container">
-        <h1>Talks</h1>
-        <div class="grid">
-          <div class="talks">
-            <img data-src="https://www.youtube.com/watch?v=xLkd2EG0rqE" src="/resources/images/talks/Copy of Data Analytics (1).jpg" alt="talks">
-            <p>talks title</p>
-          </div>
-          <div class="talks">
-            <img src="" alt="talks">
-            <p>talks title</p>
-          </div>
-          <div class="talks">
-            <img src="" alt="talks">
-            <p>talks title</p>
-          </div>
-          <div class="talks">
-            <img src="" alt="talks">
-            <p>talks title</p>
-          </div>
-          <div class="talks">
-            <img src="" alt="talks">
-            <p>talks title</p>
-          </div>
-          <div class="talks">
-            <img src="" alt="talks">
-            <p>talks title</p>
-          </div>
-          <div class="talks">
-            <img src="" alt="talks">
-            <p>talks title</p>
-          </div>
-          <div class="talks">
-            <img src="" alt="talks">
-            <p>talks title</p>
+=======
+            <div class="container_date">
+              <div class="container-title-workshop">
+                <h3>workshop title</h3>
+                <p>workshop date</p>
+              </div>
+              <div class="poster-date">
+                <div id="date">12</div>
+                <div id="month">July</div>
+              </div>
+            </div>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              officia ipsam vitae enim alias asperiores, et, rem cum porro
+              impedit fugit ab at odio repellat ut minus, dignissimos
+              quibusdam recusandae autem.
+            </p>
+>>>>>>> Stashed changes
           </div>
         </div>
       </div>
-     
     </div>
-    <div class="footer">
-      <div class="footer_container">
-        <div class="brand">
-          <div class="csi_desc">
-            <div>
-              <!-- <img class="footer_logo" src="resources\images\CSI_logo.png" alt="CSI logo">
+    <div class="talks_container">
+      <h1>Talks</h1>
+      <div class="grid">
+        <div class="talks">
+          <img data-src="https://www.youtube.com/watch?v=xLkd2EG0rqE"
+            src="/resources/images/talks/Copy of Data Analytics (1).jpg" alt="talks">
+          <p>talks title</p>
+        </div>
+        <div class="talks">
+          <img src="" alt="talks">
+          <p>talks title</p>
+        </div>
+        <div class="talks">
+          <img src="" alt="talks">
+          <p>talks title</p>
+        </div>
+        <div class="talks">
+          <img src="" alt="talks">
+          <p>talks title</p>
+        </div>
+        <div class="talks">
+          <img src="" alt="talks">
+          <p>talks title</p>
+        </div>
+        <div class="talks">
+          <img src="" alt="talks">
+          <p>talks title</p>
+        </div>
+        <div class="talks">
+          <img src="" alt="talks">
+          <p>talks title</p>
+        </div>
+        <div class="talks">
+          <img src="" alt="talks">
+          <p>talks title</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="footer_container">
+      <div class="brand">
+        <div class="csi_desc">
+          <div>
+            <!-- <img class="footer_logo" src="resources\images\CSI_logo.png" alt="CSI logo">
               <p>CSI LOGO</p> -->
-            </div>
-          </div>
-          <div class="other_organisation">
-            <h3>Other Organisations</h3>
-            <div class="other_organisation_images">
-              <img
-              class="footer_logo"
-              src="resources\images\dbit_logo.jpg"
-              alt="dbit logo"
-            />
-            <img
-              class="footer_logo"
-              src="resources\images\CSI_logo.png"
-              alt="CSI logo"
-            />
-            </div>
           </div>
         </div>
+        <div class="other_organisation">
+          <h3>Other Organisations</h3>
+          <div class="other_organisation_images">
+            <img class="footer_logo" src="resources\images\dbit_logo.jpg" alt="dbit logo" />
+            <img class="footer_logo" src="resources\images\CSI_logo.png" alt="CSI logo" />
+          </div>
+        </div>
+      </div>
 
-        <div class="social_links">
+      <div class="social_links">
+        <ul class="list">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_links_container">
+        <div class="footer_links">
           <ul class="list">
             <li>
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="/index.html">
+                <h3>HOME</h3>
+              </a>
             </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
+            <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>About</a></li>
+            <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Contact</a></li>
           </ul>
         </div>
-
-        <div class="footer_links_container">
-          <div class="footer_links">
-            <ul class="list">
-              <li>
-                <a href="/index.html">
-                  <h3>HOME</h3>
-                </a>
-              </li>
-              <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>About</a></li>
-              <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer_links">
-            <ul class="list">
-              <li>
-                <a href="/index.html">
-                  <h3>FLAGSHIP EVENTS</h3>
-                </a>
-              </li>
-              <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>Mumbai Hackathon</a></li>
-              <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Game of Codes</a></li>
-            </ul>
-          </div>
-          <div class="footer_links">
-            <ul class="list">
-              <li>
-                <a href="/index.html">
-                  <h3>ACTIVITIES</h3>
-                </a>
-              </li>
-              <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>Workshops</a></li>
-              <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Talks</a></li>
-              <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Competitions</a></li>
-            </ul>
-          </div>
+        <div class="footer_links">
+          <ul class="list">
+            <li>
+              <a href="/index.html">
+                <h3>FLAGSHIP EVENTS</h3>
+              </a>
+            </li>
+            <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>Mumbai Hackathon</a></li>
+            <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Game of Codes</a></li>
+          </ul>
+        </div>
+        <div class="footer_links">
+          <ul class="list">
+            <li>
+              <a href="/index.html">
+                <h3>ACTIVITIES</h3>
+              </a>
+            </li>
+            <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>Workshops</a></li>
+            <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Talks</a></li>
+            <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Competitions</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer_text">
-        <p>@ Computer Society Of India | All Rights Reserved</p>
-      </div>
     </div>
-    
+    <div class="footer_text">
+      <p>@ Computer Society Of India | All Rights Reserved</p>
+    </div>
+  </div>
+
   </div>
 
 
-    <div class="popup_video">
-      <div class="popup_close">
+  <div class="popup_video">
+    <div class="popup_close">
       <i class="fa-solid fa-circle-xmark"></i>
     </div>
-      <iframe src="" frameborder="0"></iframe>
-    </div>
-    <script src="/app.js"></script>
+    <iframe src="" frameborder="0"></iframe>
+  </div>
+  <script src="/app.js"></script>
 </body>
+
 </html>
