@@ -1,4 +1,4 @@
-
+var primary_color = '#17191e'
 const tl = gsap.timeline({defalts: {ease: "power2.out"}})
 // tl.to('.hidetext',{y:"0%",duration:1,stagger:0.3});
 // tl.to('.slider',{y:"-100%",duration:1,delay:0.5});
@@ -15,11 +15,11 @@ window.addEventListener("scroll",function(){
         header.style.top="-20rem";
     }else{
         header.style.top="0";
-        header.style.backgroundColor="#040406";
+        header.style.backgroundColor=primary_color;
     }
 
     if(scrolltop==0){
-        header.style.backgroundColor='#0b0b0c';
+        header.style.backgroundColor=primary_color;
     }
     lastscrolltop=scrolltop;
 })
