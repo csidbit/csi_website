@@ -3,18 +3,17 @@
 html {
   scroll-behavior: smooth;
 }
+:root{
+  /* --primary-color:#0d1117; */
+  --primary-color:#17191e;
 
-:root {
-  --primary-color: #0b0b0c;
-  /* --primary-color:#181818; */
-
-  --secondary-color: #181818;
-  /* --secondary-color:#0b0b0c; */
-
-  --tertiary-color: brown;
+  /* --secondary-color:#181818; */
+  --secondary-color:#1f2128;
+  
+  --tertiary-color:#3f5564;
 
   --border-color: rgb(98, 96, 96);
-  /* --border-color:#393939; */
+  /* --border-color:#30363d; */
 
 }
 
@@ -36,21 +35,18 @@ body {
 
 .scrolltop_div {
   position: fixed;
-
   right: 1rem;
   bottom: 1.5rem;
 }
 
 .scrolltop_div .scrolltop {
-  padding: 0.5rem 0.7rem;
+  padding: 0.5rem 0.8rem;
   background-color: var(--tertiary-color);
-  border-radius: 50%;
+  border-radius: 0.3rem;
 }
-
-.scrolltop_div .scrolltop i {
+.scrolltop_div .scrolltop {
   color: white;
-  transform: rotate(-90deg);
-  font-size: x-large;
+  font-size: large;
 }
 
 .about {
@@ -191,7 +187,7 @@ body {
 
 .container_dbit {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1034,3 +1030,35 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.event{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event section{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid var(--border-color); */
+  background-color: var(--secondary-color);
+}
+.event section h1{
+  width: 85%;
+  margin: auto;
+  text-align: right;
+  padding: 1rem;
+}
+.event section .event_section{
+  display: flex;
+  background-image:url(/resources/images/black\ bg.jpg);
+  height: 30rem;
+  width: 100%;
+}
+.event section .event_section .logo_section{
+
+}
+.event section .event_section .event_desc{
+ width: 70%;
+ height: 100%;
+ background-color:var(--secondary-color);
+}
+
