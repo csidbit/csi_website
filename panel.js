@@ -1,6 +1,6 @@
 const ANGLE = 45;
 
-let wowpanels = document.querySelectorAll(".wowpanel");
+// let wowpanels = document.querySelectorAll(".wowpanel");
 let colors = ['#4975FB', '#924DE6', '#EF5252', '#F59500'];
 
 wowpanels.forEach((element, i) => {
