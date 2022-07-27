@@ -31,7 +31,7 @@
     ></script>
 
     <!-- counter -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script> -->
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -73,26 +73,39 @@
           </ul>
         </div>
       </div>
-      <div class="hamburger">
-        <i></i>
-      </div>
+
+      <!-- mobile nav start  -->
+
       <div class="mobile_header">
         <div class="mobilelogo">
           <img src="/resources/images/CSI_logo.png" alt="csi logo">
           <p>CSI</p>
         </div>
+        <div id="menu-toggler" class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
         <div class="mobilenav_link">
+          <div class="mobnav_close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
           <ul>
             <li><a href="/index.html">HOME</a></li>
             <li><a href="/index.html">ACTIVITES</a></li>
             <li><a href="/index.html">OUR TEAM</a></li>
             <li><a href="/index.html">REACH US</a></li>
           </ul>
+          <div class="mobnav_sociallinks">
+
+          </div>
         </div>
-      </div>
+
+        <!-- mobile nav End  -->
+
 
       <div id="fullpage" class="pagecontent">
-        <div id="Home " class="container_dbit space">
+        <div id="Home " class="container_dbit">
           <div class="content">
             <h1 class="red">DBIT</h1>
             <h1>Powered by CSI</h1>
@@ -507,19 +520,8 @@
 
     <div id="scrolltop_btn" class="scrolltop_div"><a class="scrolltop" href="/index.html#fullpage"><i class="fa-solid fa-caret-up"></i></a></div>
     
-    
-    <script src="counter.js"></script>
-    <script src="background.js"></script>
     <script src="counter.js"></script>
     <script src="app.js"></script>
     <script src="panel.js"></script>
-    <!-- <script>
-      $(document).ready(function () {
-        $(".number").counterUp({
-          delay: 50,
-          time: 4200,
-        });
-      });
-    </script> -->
   </body>
 </html>

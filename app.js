@@ -38,6 +38,6 @@ document.querySelectorAll('.grid .workshop').forEach(vid =>{
     }
 })
 
-document.querySelector('.popup_video i').onclick=()=>{
+document.querySelector('.popup_video i').onclick = ()=>{
     document.querySelector('.popup_video').style.display='none';
 }
