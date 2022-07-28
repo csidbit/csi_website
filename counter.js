@@ -1,19 +1,48 @@
-const  counters_class = document.querySelectorAll('.counters');
-const speed = 200;
+// const counters = document.querySelectorAll('.counters');
+// const speed = 200;
 
-counters_class.forEach(curcounter =>{
-    const updateCount = () => {
-        const target = parseInt(curcounter.getAttribute('data-number'));
-        const initial = parseInt(curcounter.innerText);
+// counters.forEach(counter =>{
+//     const updateCount = () => {
+//         const target = +counter.getAttribute('data-target');
+//         const count = +counter.innerText;
 
-        const inc = Math.trunc(target / speed);
+//         const inc = target / speed;
 
-        if(initial < target){
-            initial.innerText = initial + inc;
-            setTimeout(updateCount, 10);
-        }
+//         if(count < target){
+//             counter.innerText = Math.ceil(count + inc);
+//             setTimeout(updateCount, 1);
+//         } else {
+//             count.innerText = target;
+//         }
+//     }
 
-    }
+//     updateCount()
+// });
 
-    updateCount();
-});
+
+/* Set Counter Up Function */
+(function ($) {
+	'use strict';
+    var ThemeBuilder = function () {
+
+		/* Set Counter Up Function */
+		var setCounterUp = function () {
+			if (!checkSelectorExistence('.counters')) { return; }
+			jQuery('.counters').counterUp({
+				delay: 10,
+				time: 3000
+			});
+		}
+
+		/* Function ============ */
+		return {
+			afterLoadThePage: function () {
+				setCounterUp();
+			}
+		}
+
+	}(jQuery);
+
+	/* jQuery Window Load */
+	jQuery(window).on("load", function (e) { ThemeBuilder.afterLoadThePage(); });
+})(jQuery);
