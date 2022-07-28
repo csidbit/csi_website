@@ -706,7 +706,10 @@ body {
   object-position: top left;
   transform: scale(0.9);
 } */
-
+a {
+ text-decoration: none;
+ color: beige;
+}
 .popup_video {
   width: 100%;
   height: 100%;
