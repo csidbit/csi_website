@@ -30,6 +30,21 @@ if(pos>100){
     scrolltopbutton.style.display='inline';
 }
 
+
+// mobile menu start
+
+var menutogggler = document.getElementById('menu-toggler');
+mobnav_link = document.getElementById('mobnav_link');
+mobnav_close = document.getElementById('mobnav_close');
+menutogggler.addEventListener('click',function(){
+    mobnav_link.style.top="0%";
+})
+mobnav_close.addEventListener('click',function(){
+    mobnav_link.style.top="-100%";
+})
+
+
+// mobile menu end 
 // activities js 
 
 // document.querySelectorAll('.grid .workshop').forEach(vid =>{
