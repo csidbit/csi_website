@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Indie+Flower&family=Lobster&family=Lora:wght@400;500;600&family=Love+Light&family=Moon+Dance&family=Roboto+Slab&family=Rowdies&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Syne+Tactile&family=Titillium+Web&family=Vujahday+Script&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Indie+Flower&family=Lobster&family=Lora:wght@400;500;600&family=Love+Light&family=Moon+Dance&family=Poppins&family=Roboto+Slab&family=Rowdies&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Syne+Tactile&family=Titillium+Web&family=Vujahday+Script&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -20,7 +22,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   background-color: var(--primary-color);
   overflow-x: hidden;
   color: beige;
@@ -240,8 +242,9 @@ body {
 }
 .dots span{
   position: absolute;
+  font-family: 'Roboto Slab', serif;
+  top: -5rem;
   left: -6rem;
-  top: -2rem;
   font-size: 10rem;
   font-weight: bolder;
   color: var(--tertiary-color);
@@ -644,12 +647,7 @@ body {
   margin-top: 2rem;
 }
 
-.current_teamgrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-}
+
 .workshop_container,
 .talks_container {
   width: 95%;
@@ -835,58 +833,32 @@ a {
 } */
 
 /* Our team page */
-.align {
+.current_teamgrid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   justify-content: space-evenly;
   background-color: var(--primary-color);
 }
 
-.main {
-  width: 100%;
-  /* height: 100vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-color);
-  padding-top: 35px;
-}
-
 .profile-card {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  background: #fff;
-  padding: 30px;
-  border-radius: 50%;
+  width: 30%;
+  height: 15rem;
+  background-color: white;
+  border-radius: 0.3rem;
   box-shadow: 0 0 22px #3336;
   transition: .6s;
-  margin: 0 25px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 25px;
-}
-
-.profile-card:hover {
-  border-radius: 10px;
-  height: 325px;
 }
 
 .profile-card .img {
-  position: relative;
-  width: 100%;
+  background-color:var(--tertiary-color);
+  border-radius: 0.5rem;
+  margin: auto;
   height: 100%;
   transition: .6s;
-  z-index: 99;
-}
-
-.profile-card:hover .img {
-  transform: translateY(-60px);
 }
 
 .img img {
   width: 100%;
-  border-radius: 50%;
   box-shadow: 0 0 22px #3336;
   transition: .6s;
 }
@@ -897,14 +869,8 @@ a {
 
 .caption {
   text-align: center;
-  transform: translateY(-80px);
-  opacity: 0;
-  transition: .6s;
 }
 
-.profile-card:hover .caption {
-  opacity: 1;
-}
 
 .caption h3 {
   color: black;
@@ -922,10 +888,6 @@ a {
   margin-right: 8px;
   font-size: 21px;
   transition: .6s;
-}
-
-.social-links a:hover {
-  color: #0c52a1;
 }
 
 .align_member {
