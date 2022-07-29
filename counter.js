@@ -23,6 +23,47 @@
 /* Set Counter Up Function */
 (function ($) {
 	'use strict';
+	var BasicFunction = function () {
+		var checkSelectorExistence = function (selectorName) {
+			if (jQuery(selectorName).length > 0) { return true; } else { return false; }
+		};
+
+		var setTestimonialCarousel = function () {
+			if (!checkSelectorExistence('.testimonial-carousel')) { return; }
+
+			jQuery('.testimonial-carousel').owlCarousel({
+				loop: true,
+				autoplay: true,
+				margin: 30,
+				nav: true,
+				dots: true,
+				navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+				responsive: {
+					0: {
+						items: 1
+					},
+					480: {
+						items: 1
+					},
+					1024: {
+						items: 2
+					},
+					1200: {
+						items: 2
+					}
+				}
+			});
+
+		}
+
+		return {
+			initialHelper: function () {
+				setTestimonialCarousel();
+			}
+		}
+
+	}(jQuery);
+	
     var ThemeBuilder = function () {
 
 		/* Set Counter Up Function */
@@ -46,3 +87,4 @@
 	/* jQuery Window Load */
 	jQuery(window).on("load", function (e) { ThemeBuilder.afterLoadThePage(); });
 })(jQuery);
+

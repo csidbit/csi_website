@@ -31,7 +31,7 @@
     ></script>
 
     <!-- counter -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -166,25 +166,25 @@
             <div class="containers">
               <div>
                 <i class="fa-solid fa-stairs"></i>
-                <div class="counters" data-number="50" >0</div>
+                <span class="counters">3000</span>
                 <h3 class="Words">Workshops</h3>
               </div>
   
               <div>
                 <i class="fa-solid fa-users"></i>
-                <div class="counters" data-number="1000">0</div>
+                <span class="counters">2000</span>
                 <h3 class="Words">Members</h3>
               </div>
   
               <div>
                 <i class="fa-solid fa-award"></i>
-                <div class="counters" data-number="25">0</div>
+                <span class="counters">1000</span>
                 <h3 class="Words">Competitions</h3>
               </div>
   
               <div>
                 <i class="fa-solid fa-award"></i>
-                <div class="counters" data-number="50">0</div>
+                <span class="counters">4000</span>
                 <h3 class="Words">Years Since Establishment</h3>
               </div>
             </div>
@@ -426,12 +426,6 @@
         <div class="footer">
           <div class="footer_container">
             <div class="brand">
-              <div class="csi_desc">
-                <div>
-                  <!-- <img class="footer_logo" src="resources\images\CSI_logo.png" alt="CSI logo">
-                  <p>CSI LOGO</p> -->
-                </div>
-              </div>
               <div class="other_organisation">
                 <h3>Other Organisations</h3>
                 <div class="other_organisation_images">
@@ -473,17 +467,18 @@
             </div>
 
             <div class="footer_links_container">
-              <div class="footer_links">
-                <ul class="list">
-                  <li>
-                    <a href="/index.html">
-                      <h3>HOME</h3>
-                    </a>
-                  </li>
-                  <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>About</a></li>
-                  <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Contact</a></li>
-                </ul>
-              </div>
+                <div class="footer_links">
+                  <ul class="list">
+                    <li>
+                      <a href="/index.html">
+                        <h3>HOME</h3>
+                      </a>
+                    </li>
+                    <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>About</a></li>
+                    <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Contact</a></li>
+                    <li><a href="/ourteams.html"><i class="fa-solid fa-caret-right"></i>Our Teams</a></li>
+                  </ul>
+                </div>
               <div class="footer_links">
                 <ul class="list">
                   <li>
@@ -502,9 +497,8 @@
                       <h3>ACTIVITIES</h3>
                     </a>
                   </li>
-                  <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>Workshops</a></li>
-                  <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Talks</a></li>
-                  <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Competitions</a></li>
+                  <li><a href="/activities.html#workshop"><i class="fa-solid fa-caret-right"></i>Workshops</a></li>
+                  <li><a href="/activities.html#talk"><i class="fa-solid fa-caret-right"></i>Talks</a></li>
                 </ul>
               </div>
             </div>
@@ -522,5 +516,7 @@
     <script src="counter.js"></script>
     <script src="app.js"></script>
     <script src="panel.js"></script>
+    <script src="waypoints-min.js"></script>
+    <script src="counterup.min.js"></script>
   </body>
 </html>

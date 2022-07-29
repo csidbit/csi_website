@@ -10,7 +10,7 @@ html {
   /* --secondary-color:#181818; */
   --secondary-color:#1f2128;
   
-  --tertiary-color:#3f5564;
+  --tertiary-color:#638399;
 
   --border-color: rgb(98, 96, 96);
   /* --border-color:#30363d; */
@@ -837,12 +837,9 @@ a {
 /* Our team page */
 .align {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* display: flex; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
+  grid-template-columns: repeat(3,1fr);
   justify-content: space-evenly;
-  background-color: gray;
+  background-color: var(--primary-color);
 }
 
 .main {
@@ -851,7 +848,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: var(--primary-color);
   padding-top: 35px;
 }
 
@@ -1297,5 +1294,14 @@ a {
   padding-left: 1rem;
   color: var(--tertiary-color);
   border-bottom: 2px solid var(--tertiary-color);
+}
+.other_organisation{
+  display: none;
+}
+.footer_links_container{
+  display: block;
+}
+.filter_btn{
+  display: none;
 }
 }
