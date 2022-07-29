@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Indie+Flower&family=Lobster&family=Lora:wght@400;500;600&family=Love+Light&family=Moon+Dance&family=Roboto+Slab&family=Rowdies&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Syne+Tactile&family=Titillium+Web&family=Vujahday+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fredericka+the+Great&family=Indie+Flower&family=Lobster&family=Londrina+Outline&family=Lora:wght@400;500;600&family=Love+Light&family=Moon+Dance&family=Poppins&family=Roboto+Slab&family=Rowdies&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Syne+Tactile&family=Titillium+Web&family=Vujahday+Script&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -10,7 +11,7 @@ html {
   /* --secondary-color:#181818; */
   --secondary-color:#1f2128;
   
-  --tertiary-color:#3f5564;
+  --tertiary-color:#638399;
 
   --border-color: rgb(98, 96, 96);
   /* --border-color:#30363d; */
@@ -20,7 +21,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   background-color: var(--primary-color);
   overflow-x: hidden;
   color: beige;
@@ -31,6 +32,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all 0.5s;
 }
 
 .scrolltop_div {
@@ -251,8 +253,9 @@ body {
 }
 .dots span{
   position: absolute;
+  font-family: 'Roboto Slab', serif;
+  top: -5rem;
   left: -6rem;
-  top: -2rem;
   font-size: 10rem;
   font-weight: bolder;
   color: var(--tertiary-color);
@@ -655,12 +658,7 @@ body {
   margin-top: 2rem;
 }
 
-.current_teamgrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-}
+
 .workshop_container,
 .talks_container {
   width: 95%;
@@ -838,119 +836,102 @@ a {
 }
 .member:hover{
   transform: scale(1.2);
-} */
+}
 
 /* @font-face {
   font-family: Exo;
   src: url(./fonts/Exo2.0-Medium.otf);
 } */
 
-/* Our team page */
-.align {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* display: flex; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  justify-content: space-evenly;
-  background-color: gray;
-}
-
-.main {
-  width: 100%;
-  /* height: 100vh; */
+/* Our team page start */
+.center{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
-  padding-top: 35px;
+}
+.teamgrid{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
 }
 
-.profile-card {
+ .profile-card {
+  width:100%;
+  border-radius: 0.3rem;
+} 
+
+ .kevinpic{
   position: relative;
-  width: 350px;
-  height: 350px;
-  background: #fff;
-  padding: 30px;
-  border-radius: 50%;
-  box-shadow: 0 0 22px #3336;
-  transition: .6s;
-  margin: 0 25px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 25px;
-}
+  top: 2rem;
+  border: none;
+ }
+ .suhanipic{
+  object-fit: cover;
+  width: 15rem;
+  height: 24rem;
+ }
+ .shereinepic{
 
-.profile-card:hover {
-  border-radius: 10px;
-  height: 325px;
-}
-
+ }
 .profile-card .img {
-  position: relative;
-  width: 100%;
+  width: 80%;
+  margin: auto;
+  background-color:var(--secondary-color);
+  border-radius: 0.5rem;
   height: 100%;
   transition: .6s;
-  z-index: 99;
-}
-
-.profile-card:hover .img {
-  transform: translateY(-60px);
+  object-fit: cover;
 }
 
 .img img {
+  border: none;
+  position: relative;
   width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 0 22px #3336;
   transition: .6s;
 }
 
 .profile-card:hover img {
-  border-radius: 10px;
+  transform: scale(1.1);
 }
 
 .caption {
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  position: relative;
+  top: -3rem;
   text-align: center;
-  transform: translateY(-80px);
-  opacity: 0;
-  transition: .6s;
 }
 
-.profile-card:hover .caption {
-  opacity: 1;
-}
 
 .caption h3 {
   color: black;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 .caption p {
   font-size: 16px;
   color: #0c52a1;
-  margin: 2px 0 9px 0;
+  /* margin: 2px 0 9px 0; */
 }
 
 .caption .social-links a {
   color: #333;
-  margin-right: 8px;
-  font-size: 21px;
+  /* margin-right: 8px; */
+  /* font-size: 21px; */
   transition: .6s;
 }
 
-.social-links a:hover {
-  color: #0c52a1;
-}
-
-.align_member {
-  margin-left: auto;
-  background-color: gray;
-}
-
 .team_year {
-  padding: 20px;
-}
+  padding:1rem;
+} 
 
+/* our teams end  */
 
 .reachus {
   text-align: center;
@@ -1147,15 +1128,16 @@ a {
   width: 100%;
   height: 100%;
   z-index: 100;
-  background-color: #0A66C2;
+  background-color:var(--secondary-color);
   position: fixed;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: none;
+  top: -100%;
 }
 .mobnav_close{
+  font-size: xx-large;
   position: absolute;
   top: 3rem;
   right: 3rem;
@@ -1303,10 +1285,21 @@ a {
 }
 .reach_us h1 {
   width: 100%;
-  margin-left: 1rem;
   margin-bottom: 2rem;
   padding-left: 1rem;
   color: var(--tertiary-color);
   border-bottom: 2px solid var(--tertiary-color);
+}
+.other_organisation{
+  display: none;
+}
+.footer_links_container{
+  display: block;
+}
+.filter_btn{
+  display: none;
+}
+.teamgrid{
+  display: block;
 }
 }

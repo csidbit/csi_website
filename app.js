@@ -30,14 +30,30 @@ if(pos>100){
     scrolltopbutton.style.display='inline';
 }
 
-// activities js 
-document.querySelectorAll('.grid .workshop').forEach(vid =>{
-    vid.onclick = ()=>{
-        document.querySelector('.popup_video').style.display='block';
-        document.querySelector('.popup_video iframe').src=vid.getAttribute('data-src');
-    }
+
+// mobile menu start
+
+var menutogggler = document.getElementById('menu-toggler');
+mobnav_link = document.getElementById('mobnav_link');
+mobnav_close = document.getElementById('mobnav_close');
+menutogggler.addEventListener('click',function(){
+    mobnav_link.style.top="0%";
+})
+mobnav_close.addEventListener('click',function(){
+    mobnav_link.style.top="-100%";
 })
 
-document.querySelector('.popup_video i').onclick = ()=>{
-    document.querySelector('.popup_video').style.display='none';
-}
+
+// mobile menu end 
+// activities js 
+
+// document.querySelectorAll('.grid .workshop').forEach(vid =>{
+//     vid.onclick = ()=>{
+//         document.querySelector('.popup_video').style.display='block';
+//         document.querySelector('.popup_video iframe').src=vid.getAttribute('data-src');
+//     }
+// })
+
+// document.querySelector('.popup_video i').onclick = ()=>{
+//     document.querySelector('.popup_video').style.display='none';
+// }
