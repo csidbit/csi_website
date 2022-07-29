@@ -229,7 +229,7 @@ height: 100%;
 }
 .content{
   position: absolute;
-  left: 25rem;
+  left: 30%;
   width: 100%;
   z-index: 1;
   /* background-color: rgba(0, 0, 0, 0.9); */
