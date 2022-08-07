@@ -1,120 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSI DBIT</title>
-    <link rel="stylesheet" href="style\style.css" />
-    <link rel="icon" href="/resources/favicon/favicon.ico?v=2">
-  </head>
 
-  <body>
-    <!-- cdn links -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSI DBIT</title>
+  <link rel="stylesheet" href="style\style.css" />
+  <link rel="icon" href="/resources/favicon/favicon.ico?v=2">
+</head>
 
-    <!-- partical script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<body>
+  <!-- cdn links -->
 
-    <!-- gsap -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
-      integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <!-- partical script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 
-    <!-- fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/dee439f8c1.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+    integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- counter -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/dee439f8c1.js" crossorigin="anonymous"></script>
 
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- counter -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
-    <!-- waypoint -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <!-- cdn links End -->
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- page content -->
-    <div id="particle-canvas">
-      <div id="header" class="header">
-        <div class="csi_logo">
-          <img
-            class="footer_logo"
-            src="resources\images\CSI_logo.png"
-            alt="csi logo"
-          />
-          <h1>CSI</h1>
-        </div>
-        <div class="navbar">
-          <ul class="navlinklistbox">
-            <li class="navlinklist">
-              <a class="navlinks navlink_active" href="#Home">HOME</a>
-            </li>
-            <li class="navlinklist">
-              <a class="navlinks" href="/activities.html">ACTIVITIES</a>
-            </li>
-            <li class="navlinklist">
-              <a class="navlinks" href="/flagshipevents.html"
-                >FLAGSHIP EVENTS</a
-              >
-            </li>
-            <li class="navlinklist">
-              <a class="navlinks" href="/ourteams.html">OUR TEAM</a>
-            </li>
-            <li class="navlinklist">
-              <a class="navlinks" href="/reachus.html">REACH US</a>
-            </li>
-          </ul>
+  <!-- waypoint -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <!-- cdn links End -->
+
+  <!-- page content -->
+  <div id="particle-canvas">
+    <div id="header" class="header">
+      <div class="csi_logo">
+        <img class="footer_logo" src="resources\images\CSI_logo.png" alt="csi logo" />
+        <h1>CSI</h1>
+      </div>
+      <div class="navbar">
+        <ul class="navlinklistbox">
+          <li class="navlinklist">
+            <a class="navlinks navlink_active" href="#Home">HOME</a>
+          </li>
+          <li class="navlinklist">
+            <a class="navlinks" href="/activities.html">ACTIVITIES</a>
+          </li>
+          <li class="navlinklist">
+            <a class="navlinks" href="/flagshipevents.html">FLAGSHIP EVENTS</a>
+          </li>
+          <li class="navlinklist">
+            <a class="navlinks" href="/ourteams.html">OUR TEAM</a>
+          </li>
+          <li class="navlinklist">
+            <a class="navlinks" href="/reachus.html">REACH US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- mobile nav start  -->
+
+    <div id="mob-header" class="mobile_header">
+      <div class="mobilelogo">
+        <img src="/resources/images/CSI_logo.png" alt="csi logo">
+        <p>CSI</p>
+      </div>
+      <div id="menu-toggler" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div id="mobnav_link" class="mobilenav_link">
+      <div id="mobnav_close" class="mobnav_close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <ul>
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="/activities.html">ACTIVITES</a></li>
+        <li><a href="/ourteams.html">OUR TEAM</a></li>
+        <li><a href="/reachus.html">REACH US</a></li>
+      </ul>
+    </div>
+
+    <!-- mobile nav End  -->
+
+
+    <div id="fullpage" class="pagecontent">
+      <div id="Home " class="container_dbit">
+        <img src="/resources/images/backgroundimage.jpg" alt="">
+        <div class="content center">
+          <!-- <h1 class="center"><span class="">DBIT</span>  Powered by CSI</h1> -->
+          <div>
+            <h1 class="fontandblue">CSI-DBIT<br>Computer Society Of India <br><br>
+              <h3>CSI-Dbit is an altruistic society in college initiating workshops and events to <br> explore the
+                cornucopia of information.</h3>
+            </h1>
+          </div>
         </div>
       </div>
 
-      <!-- mobile nav start  -->
-
-      <div id="mob-header" class="mobile_header">
-        <div class="mobilelogo">
-          <img src="/resources/images/CSI_logo.png" alt="csi logo">
-          <p>CSI</p>
-        </div>
-        <div id="menu-toggler" class="hamburger">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-
-        <div id="mobnav_link" class="mobilenav_link">
-          <div id="mobnav_close" class="mobnav_close">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-          <ul>
-            <li><a href="/index.html">HOME</a></li>
-            <li><a href="/activities.html">ACTIVITES</a></li>
-            <li><a href="/ourteams.html">OUR TEAM</a></li>
-            <li><a href="/reachus.html">REACH US</a></li>
-          </ul>
-        </div>
-
-        <!-- mobile nav End  -->
-
-
-      <div id="fullpage" class="pagecontent">
-        <div id="Home " class="container_dbit">
-          <img src="/resources/images/backgroundimage.jpg" alt="">
-          <div class="content center">
-            <!-- <h1 class="center"><span class="">DBIT</span>  Powered by CSI</h1> -->
-            <div>
-              <h1 class="fontandblue" >CSI-DBIT<br>Computer Society Of India <br><br>
-              <h3>CSI-Dbit is an altruistic society in college initiating workshops and events to <br> explore the cornucopia of information.</h3>
-              </h1></div>
-          </div>
-        </div>
-
-        <div id="" class="event space">
-          <!-- <section>
+      <div id="" class="event space">
+        <!-- <section>
             <h1>Events</h1>
             <div class="event_bg">
               <div class="each_event">
@@ -122,79 +113,77 @@
               </div>
             </div>
           </section> -->
-          <div class="event_section">
-                <div class="dots">
-                  <h1><span>E</span> vents</h1>
-                </div>
-                <div class="frame">
-                  <div class="pannels">
-                    <div class="wowpanel">
-                      <img class="" src="/resources/images/coding competition.jpg" />
-                      <div class="panel_name">Coding Competitions</div>
-                    </div>
-                    
-                    <div class="wowpanel">
-                      <img class="" src="/resources/images/workshops.jpg" />
-                      <div class="panel_name">Workshops</div>
-                    </div>
-                    <div class="wowpanel">
-                      <img
-                        class=""
-                        src="/resources/images/project dev.jpg"
-                      />
-                      <div class="panel_name">Project Developement</div>
-                    </div>
-                    <div class="wowpanel">
-                      <img class="" src="/resources/images/talks.jpg" />
-                      <div class="panel_name">Technical Talks</div>
-                    </div>
-                    
-                  </div>
-                </div>
+        <div class="event_section">
+          <div class="dots">
+            <h1><span>E</span> vents</h1>
+          </div>
+          <div class="frame">
+            <div class="pannels">
+              <div class="wowpanel">
+                <img class="" src="/resources/images/coding competition.jpg" />
+                <div class="panel_name">Coding Competitions</div>
               </div>
-        </div>
 
+              <div class="wowpanel">
+                <img class="" src="/resources/images/workshops.jpg" />
+                <div class="panel_name">Workshops</div>
+              </div>
+              <div class="wowpanel">
+                <img class="" src="/resources/images/project dev.jpg" />
+                <div class="panel_name">Project Developement</div>
+              </div>
+              <div class="wowpanel">
+                <img class="" src="/resources/images/talks.jpg" />
+                <div class="panel_name">Technical Talks</div>
+              </div>
 
-        <!-- counter section -->
-
-        <section class="counters-container space">
-          <div class="counter-container_center">
-            <div class="counter_sec">
-              <h1>CSI DBIT STUDENT CHAPTER</h1>
-              <h4>Since its inception in 2006, CSI has effectively created a platform for everyone to progress together, and has relentlessly worked to provide the best.</h4>
-              <h4>Join us on this meaningful adventure</h4>
-            </div>
-            <div class="containers">
-              <div>
-                <i class="fa-solid fa-stairs"></i>
-                <span class="counters">200+</span>
-                <h3 class="Words">Workshops</h3>
-              </div>
-  
-              <div>
-                <i class="fa-solid fa-users"></i>
-                <span class="counters">2000+</span>
-                <h3 class="Words">Members</h3>
-              </div>
-  
-              <div>
-                <i class="fa-solid fa-award"></i>
-                <span class="counters">50+</span>
-                <h3 class="Words">Competitions</h3>
-              </div>
-  
-              <div>
-                <i class="fa-solid fa-award"></i>
-                <span class="counters">15+</span>
-                <h3 class="Words">Years Since Establishment</h3>
-              </div>
             </div>
           </div>
-        </section>
-        <!-- counter section --->
+        </div>
+      </div>
 
-        <div id="About" class="about space">
-          <!-- <div class="title_container">
+
+      <!-- counter section -->
+
+      <section class="counters-container space">
+        <div class="counter-container_center">
+          <div class="counter_sec">
+            <h1>CSI DBIT STUDENT CHAPTER</h1>
+            <h4>Since its inception in 2006, CSI has effectively created a platform for everyone to progress together,
+              and has relentlessly worked to provide the best.</h4>
+            <h4>Join us on this meaningful adventure</h4>
+          </div>
+          <div class="containers">
+            <div>
+              <i class="fa-solid fa-stairs"></i>
+              <span class="counters">200+</span>
+              <h3 class="Words">Workshops</h3>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-users"></i>
+              <span class="counters">2000+</span>
+              <h3 class="Words">Members</h3>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-award"></i>
+              <span class="counters">50+</span>
+              <h3 class="Words">Competitions</h3>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-award"></i>
+              <span class="counters">15+</span>
+              <h3 class="Words">Years Since Establishment</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- counter section --->
+
+      <div id="About" class="about space">
+        <!-- <div class="title_container">
         <div class="title_sticky">
           <ul class="title">A</ul>
           <ul class="title">B</ul>
@@ -212,7 +201,7 @@
           </ul>
         </div>
       </div> -->
-          <!-- <div class="about_section_container">
+        <!-- <div class="about_section_container">
         <div class="about_section">
           <div class="tl_container">
             <div class="tl">
@@ -304,112 +293,96 @@
           </div>
         </div>
       </div> -->
-          <div class="heading">
-            <div class="box1">
-              <div class="box1_content">
+        <div class="heading">
+          <div class="box1">
+            <div class="box1_content">
+              <p>
+                Computer Society of India is the first and largest body of
+                computer professionals in India. It was started on 6 March 1965
+                by a few computer professionals and has now grown to be the
+                national body representing computer professionals. It has 72
+                chapters across India, 511 student branches, and 100,000
+                members. The Computer Society of India is a non-profit
+                professional meet to exchange views and information learn and
+                share ideas.
+              </p>
+            </div>
+          </div>
+          <div class="box_container">
+            <div class="sub_box_cont">
+              <div class="levitate_box2 box2">
+                <img class="goal_image" src="resources\images/find.png" />
+                <h2>Vision</h2>
                 <p>
-                  Computer Society of India is the first and largest body of
-                  computer professionals in India. It was started on 6 March 1965
-                  by a few computer professionals and has now grown to be the
-                  national body representing computer professionals. It has 72
-                  chapters across India, 511 student branches, and 100,000
-                  members. The Computer Society of India is a non-profit
-                  professional meet to exchange views and information learn and
-                  share ideas.
+                  are ,innovate ideas and to facilitate
+                  <span>OpenSource</span> culture along with research
+                  attitude
+                </p>
+              </div>
+              <div class="box2 ">
+                <img class="goal_image" src="resources\images/target.png" />
+                <h2>Mission</h2>
+                <p>
+                  DBIT-CSI is to facilitate Research , knowledge Sharing ,
+                  learning and <span>Career Enhancement</span> for
+                  all categories of IT Professional.
                 </p>
               </div>
             </div>
-            <div class="box_container">
-              <div class="sub_box_cont">
-                <div class="levitate_box2 box2">
-                  <img class="goal_image" src="resources\images/find.png" />
-                  <h2 >Vision</h2>
-                  <p>
-                    are ,innovate ideas and to facilitate
-                    <span >OpenSource</span> culture along with research
-                    attitude
-                  </p>
-                </div>
-                <div class="box2 ">
-                  <img
-                    class="goal_image"
-                    src="resources\images/target.png"
-                  />
-                  <h2 >Mission</h2>
-                  <p>
-                    DBIT-CSI is to facilitate Research , knowledge Sharing ,
-                    learning and <span >Career Enhancement</span> for
-                    all categories of IT Professional.
-                  </p>
-                </div>
+            <div class="sub_box_cont">
+              <div class="levitate_box2 box2">
+                <img class="goal_image" src="resources\images/checklist.png" />
+                <h2>Objective</h2>
+                <p>
+                  To serve the student Community by bridging the gap between
+                  Acedemics and Industry Outcomes.
+                  <br />
+                  Student should be
+                  <span>Industry Ready</span> with latest skills.
+                </p>
               </div>
-              <div class="sub_box_cont">
-                <div class="levitate_box2 box2">
-                  <img
-                    class="goal_image"
-                    src="resources\images/checklist.png"
-                  />
-                  <h2>Objective</h2>
-                  <p>
-                    To serve the student Community by bridging the gap between
-                    Acedemics and Industry Outcomes.
-                    <br />
-                    Student should be
-                    <span>Industry Ready</span> with latest skills.
-                  </p>
-                </div>
-                <div class="box2 ">
-                  <img
-                    class="goal_image"
-                    src="resources\images/value.png"
-                  />
-                  <h2 >Values</h2>
-                  <p>
-                    To serve the student Community by bridging the gap between
-                    Acedemics and Industry Outcomes.
-                    <br />
-                    Student should be
-                    <span>Industry Ready</span> with latest skills.
-                  </p>
-                </div>
+              <div class="box2 ">
+                <img class="goal_image" src="resources\images/value.png" />
+                <h2>Values</h2>
+                <p>
+                  To serve the student Community by bridging the gap between
+                  Acedemics and Industry Outcomes.
+                  <br />
+                  Student should be
+                  <span>Industry Ready</span> with latest skills.
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        
-
-        
-
-        <div id="Reachus" class="reach_us space">
-          <h1>Reach US</h1>
-          <div class="reachus_text">
-            <div class="contacts">
-              <div class="contact_info_home">
-                <div class="contact_info_home_address">
-                  <a
-                  href="http://maps.google.com/?q=Don Bosco Institute of Technology, Mumbai, DON BOSCO INSTITUTE OF TECHNOLOGY, Amar Nagar, Kurla West, Kurla, Mumbai, Maharashtra"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><span><i class="fa-solid fa-building-columns"></i></span><p>Don
+      <div id="Reachus" class="reach_us space">
+        <h1>Reach US</h1>
+        <div class="reachus_text">
+          <div class="contacts">
+            <div class="contact_info_home">
+              <div class="contact_info_home_address">
+                <a href="http://maps.google.com/?q=Don Bosco Institute of Technology, Mumbai, DON BOSCO INSTITUTE OF TECHNOLOGY, Amar Nagar, Kurla West, Kurla, Mumbai, Maharashtra"
+                  target="_blank" rel="noopener noreferrer"><span><i class="fa-solid fa-building-columns"></i></span>
+                  <p>Don
                     Bosco Institute of Technology, Mumbai, Premier Automobiles
-                    Road Opp. HDIL Premier Exotica, Kurla, Mumbai, Maharashtra</p></a>
-                </div>
-                <div class="contact_info_home_mailandnumber">
-                  <br />
-                  <a href="mailto:csidbit@gmail.com"
-                    ><span><i class="fa-solid fa-at"></i></span>
-                    csidbit@gmail.com
-                  </a>
-                  <br />
-                  <a href="tel:8346285742"
-                    ><span><i class="fa-solid fa-phone"></i></span> +91
-                    8346285742
-                  </a>
-                </div>
+                    Road Opp. HDIL Premier Exotica, Kurla, Mumbai, Maharashtra</p>
+                </a>
+              </div>
+              <div class="contact_info_home_mailandnumber">
+                <br />
+                <a href="mailto:csidbit@gmail.com"><span><i class="fa-solid fa-at"></i></span>
+                  csidbit@gmail.com
+                </a>
+                <br />
+                <a href="tel:8346285742"><span><i class="fa-solid fa-phone"></i></span> +91
+                  8346285742
+                </a>
               </div>
             </div>
-            <!-- <div class="map_align">
+          </div>
+          <!-- <div class="map_align">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.6013286237394!2d72.88640741410074!3d19.081258256767498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8866a456c9f%3A0x8d1745d15baac575!2sDon%20Bosco%20Institute%20of%20Technology%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1657729563051!5m2!1sen!2sin"
                 width="1250"
@@ -421,103 +394,99 @@
               >
               </iframe>
             </div> -->
-          </div>
         </div>
+      </div>
 
-        <div class="footer">
-          <div class="footer_container">
-            <div class="brand">
-              <div class="other_organisation">
-                <h3>Other Organisations</h3>
-                <div class="other_organisation_images">
-                  <img
-                  class="footer_logo"
-                  src="resources\images\dbit_logo.jpg"
-                  alt="dbit logo"
-                />
-                <img
-                  class="footer_logo"
-                  src="/resources/images/mumbai.org-csi-logo.png"
-                  alt="CSI logo"
-                />
-                </div>
+      <div class="footer">
+        <div class="footer_container">
+          <div class="brand">
+            <div class="other_organisation">
+              <h3>Other Organisations</h3>
+              <div class="other_organisation_images">
+                <img class="footer_logo" src="resources\images\dbit_logo.jpg" alt="dbit logo" />
+                <img class="footer_logo" src="/resources/images/mumbai.org-csi-logo.png" alt="CSI logo" />
               </div>
             </div>
+          </div>
 
-            <div class="social_links">
+          <div class="social_links">
+            <ul class="list">
+              <li>
+                <a href="https://www.facebook.com/csidbit/"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/csidbit"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/csidbit/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/c/CSIDBIT/videos"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/csi-dbit-946267236/?trk=public_profile_browsemap&originalSubdomain=in"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer_links_container">
+            <div class="footer_links">
               <ul class="list">
                 <li>
-                  <a href="https://www.facebook.com/csidbit/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="/index.html">
+                    <h3>HOME</h3>
+                  </a>
                 </li>
-                <li>
-                  <a href="https://twitter.com/csidbit"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/csidbit/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/c/CSIDBIT/videos"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/csi-dbit-946267236/?trk=public_profile_browsemap&originalSubdomain=in"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
+                <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>About</a></li>
+                <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Contact</a></li>
+                <li><a href="/ourteams.html"><i class="fa-solid fa-caret-right"></i>Our Teams</a></li>
               </ul>
             </div>
-
-            <div class="footer_links_container">
-                <div class="footer_links">
-                  <ul class="list">
-                    <li>
-                      <a href="/index.html">
-                        <h3>HOME</h3>
-                      </a>
-                    </li>
-                    <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>About</a></li>
-                    <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Contact</a></li>
-                    <li><a href="/ourteams.html"><i class="fa-solid fa-caret-right"></i>Our Teams</a></li>
-                  </ul>
-                </div>
-              <div class="footer_links">
-                <ul class="list">
-                  <li>
-                    <a href="/index.html">
-                      <h3>FLAGSHIP EVENTS</h3>
-                    </a>
-                  </li>
-                  <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>Mumbai Hackathon</a></li>
-                  <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Game of Codes</a></li>
-                </ul>
-              </div>
-              <div class="footer_links">
-                <ul class="list">
-                  <li>
-                    <a href="/index.html">
-                      <h3>ACTIVITIES</h3>
-                    </a>
-                  </li>
-                  <li><a href="/activities.html#workshop"><i class="fa-solid fa-caret-right"></i>Workshops</a></li>
-                  <li><a href="/activities.html#talk"><i class="fa-solid fa-caret-right"></i>Talks</a></li>
-                </ul>
-              </div>
+            <div class="footer_links">
+              <ul class="list">
+                <li>
+                  <a href="/index.html">
+                    <h3>FLAGSHIP EVENTS</h3>
+                  </a>
+                </li>
+                <li><a href="/index.html#about"><i class="fa-solid fa-caret-right"></i>Mumbai Hackathon</a></li>
+                <li><a href="/index.html#contact"><i class="fa-solid fa-caret-right"></i>Game of Codes</a></li>
+              </ul>
+            </div>
+            <div class="footer_links">
+              <ul class="list">
+                <li>
+                  <a href="/index.html">
+                    <h3>ACTIVITIES</h3>
+                  </a>
+                </li>
+                <li><a href="/activities.html#workshop"><i class="fa-solid fa-caret-right"></i>Workshops</a></li>
+                <li><a href="/activities.html#talk"><i class="fa-solid fa-caret-right"></i>Talks</a></li>
+              </ul>
             </div>
           </div>
-          <div class="footer_text">
-            <p>@ Computer Society Of India | All Rights Reserved</p>
-          </div>
         </div>
-        
+        <div class="footer_text">
+          <p>@ Computer Society Of India | All Rights Reserved</p>
+        </div>
       </div>
-    </div>
 
-    <div id="scrolltop_btn" class="scrolltop_div"><a class="scrolltop" href="/index.html#fullpage"><i class="fa-solid fa-caret-up"></i></a></div>
-    
-    <script src="counter.js"></script>
-    <script src="app.js"></script>
-    <script src="panel.js"></script>
-    <script src="waypoints-min.js"></script>
-    <script src="counterup.min.js"></script>
-  </body>
+    </div>
+  </div>
+
+  <div id="scrolltop_btn" class="scrolltop_div"><a class="scrolltop" href="/index.html#fullpage"><i
+        class="fa-solid fa-caret-up"></i></a></div>
+
+  <script src="counter.js"></script>
+  <script src="app.js"></script>
+  <script src="panel.js"></script>
+  <script src="waypoints-min.js"></script>
+  <script src="counterup.min.js"></script>
+</body>
+
 </html>

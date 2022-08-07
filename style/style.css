@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fredericka+the+Great&family=Indie+Flower&family=Lobster&family=Londrina+Outline&family=Lora:wght@400;500;600&family=Love+Light&family=Moon+Dance&family=Poppins&family=Roboto+Slab&family=Rowdies&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Syne+Tactile&family=Titillium+Web&family=Vujahday+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fredericka+the+Great&family=Indie+Flower&family=Lobster&family=Londrina+Outline&family=Lora:wght@400;500;600&family=Love+Light&family=Moon+Dance&family=Poppins&family=Roboto+Slab&family=Rowdies&family=Rubik+Mono+One&family=Source+Sans+Pro:wght@300&family=Syne+Tactile&family=Titillium+Web&family=Vujahday+Script&display=swap&family=Monoton&family=Oleo+Script+Swash+Caps&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -685,17 +685,16 @@ height: 100%;
   color: #626b8f;
 }
 .flagship_linkbox a span{
-  
-  font-family: 'Londrina Outline', cursive;
+  font-family: 'Monoton', cursive;
   letter-spacing: 0.1rem;
-  font-weight: bolder;
   color: yellow;
 }
 .got{
-  font-family: 'Londrina Outline', cursive;
-  letter-spacing: 0.1rem;
-  font-size: xx-large;
+  font-family: 'Monoton', cursive;
+  letter-spacing: 0.2rem;
   color: red;
+  text-decoration: none;
+  text-decoration-color: whitesmoke;
 }
 
 .grid {
