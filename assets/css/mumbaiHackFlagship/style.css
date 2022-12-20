@@ -197,12 +197,12 @@ body{
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #1bbca3;
+    color: #007aff;
   }
   
   .navbar .getstarted,
   .navbar .getstarted:focus {
-    background: #1bbca3;
+    background: #007aff;
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 4px;
@@ -248,7 +248,7 @@ body{
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: #1bbca3;
+    color: #007aff;
   }
   
   .navbar .dropdown:hover>ul {
@@ -347,7 +347,7 @@ body{
   .navbar-mobile a:hover,
   .navbar-mobile .active,
   .navbar-mobile li:hover>a {
-    color: #1bbca3;
+    color: #007aff;
   }
   
   .navbar-mobile .getstarted,
@@ -382,7 +382,7 @@ body{
   .navbar-mobile .dropdown ul a:hover,
   .navbar-mobile .dropdown ul .active:hover,
   .navbar-mobile .dropdown ul li:hover>a {
-    color: #1bbca3;
+    color: #007aff;
   }
   
   .navbar-mobile .dropdown>.dropdown-active {
