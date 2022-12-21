@@ -1458,13 +1458,13 @@ section {
   bottom: 0;
   transition: bottom ease-in-out 0.4s;
 }
-.cust_icon a{
-  margin: 0 10px;
+.cust_icons a{
+  margin: 0 5px;
   color: #000;
 }
 
 
-  .cust_icon {
+  .cust_icons {
       position: relative;
       display: inline;
       color: #333;
@@ -1476,7 +1476,7 @@ section {
       cursor: pointer;
 
   }
-  .cust_icon::before{
+  .cust_icons::before{
       color: #333;
       position: absolute;
       margin: 50px;
@@ -1490,23 +1490,23 @@ section {
       transform: scale(0.9);
   }
   
-  .cust_icon:hover::before{
+  .cust_icons:hover::before{
       filter: blur(1.5px);
       transform: scale(1.2);
       
   }
  
-  .cust_icon .icon1:hover{
+  .cust_icons .icon1:hover{
       color:#0a66c2;
-      text-shadow: 0 0 15px #0a66c2;
+  
       
       
 
   }
-  .cust_icon .icon2:hover{
-      color:black;
+  .cust_icons .icon2:hover{
+      color: #333;
       
-      text-shadow: 0 0 15px black;
+ 
 
   }
  
