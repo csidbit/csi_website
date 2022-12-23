@@ -1725,7 +1725,7 @@ events-grid-content-date,.events-grid-content-details{
 .events-grid-content-details{
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     text-align: left;
 }
