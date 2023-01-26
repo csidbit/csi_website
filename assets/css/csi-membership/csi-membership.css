@@ -179,7 +179,7 @@
   font-family: "Poppins", sans-serif;
 }
 .csi-membership .membershipPriceTable .price-details .price::after {
-  content: "/year";
+  content: "";
   right: -33px;
   bottom: 17px;
   font-size: 13px;
