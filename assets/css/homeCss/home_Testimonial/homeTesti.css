@@ -230,13 +230,11 @@
 }
 
 .testimonial.style-3 .section-wrapper .testimonial-slider svg circle.animation-one {
-  -webkit-animation: animate_countdown 20.5s linear infinite forwards;
-          animation: animate_countdown 20.5s linear infinite forwards;
+  animation: animate_countdown 20.5s linear infinite forwards;
 }
 
 .testimonial.style-3 .section-wrapper .testimonial-slider svg circle.animation-two {
-  -webkit-animation: animate_countdown_one 20.5s linear infinite forwards;
-          animation: animate_countdown_one 20.5s linear infinite forwards;
+  animation: animate_countdown_one 20.5s linear infinite forwards;
 }
 
 .testimonial.style-3 .section-wrapper .testimonial-slider h6 {
@@ -532,13 +530,11 @@
 }
 
 .testimonial.style-3 .section-wrapper .testimonial-slider .testi-pagination span.swiper-pagination-bullet-active::after {
-  -webkit-animation: animate1 1s linear infinite;
-          animation: animate1 1s linear infinite;
+  animation: animate1 1s linear infinite;
 }
 
 .testimonial.style-3 .section-wrapper .testimonial-slider .testi-pagination span.swiper-pagination-bullet-active::before {
-  -webkit-animation: animate1 2s linear infinite;
-          animation: animate1 2s linear infinite;
+  animation: animate1 2s linear infinite;
 }
 
 @media (max-width: 991px) {

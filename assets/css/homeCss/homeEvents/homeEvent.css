@@ -49,7 +49,6 @@ body {
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .homeEventsCont .item-bg {
@@ -227,8 +226,8 @@ body {
     color: #222222;
   }
   .homeEventsCont .homeEvents__item:hover .homeEvents-date,
-.homeEventsCont .homeEvents__item:hover .homeEvents__title,
-.homeEventsCont .homeEvents__item:hover .homeEvents__txt {
+  .homeEventsCont .homeEvents__item:hover .homeEvents__title,
+  .homeEventsCont .homeEvents__item:hover .homeEvents__txt {
     opacity: 1;
   }
   .homeEventsCont .homeEvents__item:hover .homeEvents__img {

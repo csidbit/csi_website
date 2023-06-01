@@ -11,22 +11,21 @@ if ($(window).width() > 800) {
     var homeEventsItem = document.querySelectorAll(".homeEvents__item");
     homeEventsItem.forEach(function (element, index) {
       element.addEventListener("mouseover", function () {
-        var x = this.getBoundingClientRect().left;
-        var y = this.getBoundingClientRect().top;
-        var width = this.getBoundingClientRect().width;
-        var height = this.getBoundingClientRect().height;
+        // var x = this.getBoundingClientRect().left;
+        // var y = this.getBoundingClientRect().top;
+        // var width = this.getBoundingClientRect().width;
+        // var height = this.getBoundingClientRect().height;
 
-        $(".item-bg").addClass("active");
+        // $(".item-bg").addClass("active");
         $(".homeEvents__item").removeClass("active");
-        // $('.homeEvents__item').removeClass('active');
 
-        bg.style.width = width + "px";
-        bg.style.height = height + "px";
-        bg.style.transform = "translateX(" + x + "px ) translateY(" + y + "px)";
+        // bg.style.width = width + "px";
+        // bg.style.height = height + "px";
+        // bg.style.transform = "translateX(" + x + "px ) translateY(" + y + "px)";
       });
 
       element.addEventListener("mouseleave", function () {
-        $(".item-bg").removeClass("active");
+        // $(".item-bg").removeClass("active");
         $(".homeEvents__item").removeClass("active");
       });
     });
@@ -66,22 +65,22 @@ var swiper = new Swiper(".homeEvents-slider", {
   },
   on: {
     init: function () {
-      var activeItem = document.querySelector(".swiper-slide-active");
+      // var activeItem = document.querySelector(".swiper-slide-active");
 
-      var sliderItem = activeItem.querySelector(".homeEvents__item");
+      // var sliderItem = activeItem.querySelector(".homeEvents__item");
 
       $(".swiper-slide-active .homeEvents__item").addClass("active");
 
-      var x = sliderItem.getBoundingClientRect().left;
-      var y = sliderItem.getBoundingClientRect().top;
-      var width = sliderItem.getBoundingClientRect().width;
-      var height = sliderItem.getBoundingClientRect().height;
+      // var x = sliderItem.getBoundingClientRect().left;
+      // var y = sliderItem.getBoundingClientRect().top;
+      // var width = sliderItem.getBoundingClientRect().width;
+      // var height = sliderItem.getBoundingClientRect().height;
 
-      $(".item-bg").addClass("active");
+      // $(".item-bg").addClass("active");
 
-      bg.style.width = width + "px";
-      bg.style.height = height + "px";
-      bg.style.transform = "translateX(" + x + "px ) translateY(" + y + "px)";
+      // bg.style.width = width + "px";
+      // bg.style.height = height + "px";
+      // bg.style.transform = "translateX(" + x + "px ) translateY(" + y + "px)";
     }
   }
 });
@@ -97,20 +96,20 @@ swiper.on("slideChange", function () {
 
 swiper.on("slideChangeTransitionEnd", function () {
   $(".homeEvents__item").removeClass("active");
-  var activeItem = document.querySelector(".swiper-slide-active");
+  // var activeItem = document.querySelector(".swiper-slide-active");
 
-  var sliderItem = activeItem.querySelector(".homeEvents__item");
+  // var sliderItem = activeItem.querySelector(".homeEvents__item");
 
   $(".swiper-slide-active .homeEvents__item").addClass("active");
 
-  var x = sliderItem.getBoundingClientRect().left;
-  var y = sliderItem.getBoundingClientRect().top;
-  var width = sliderItem.getBoundingClientRect().width;
-  var height = sliderItem.getBoundingClientRect().height;
+  // var x = sliderItem.getBoundingClientRect().left;
+  // var y = sliderItem.getBoundingClientRect().top;
+  // var width = sliderItem.getBoundingClientRect().width;
+  // var height = sliderItem.getBoundingClientRect().height;
 
-  $(".item-bg").addClass("active");
+  // $(".item-bg").addClass("active");
 
-  bg.style.width = width + "px";
-  bg.style.height = height + "px";
-  bg.style.transform = "translateX(" + x + "px ) translateY(" + y + "px)";
+  // bg.style.width = width + "px";
+  // bg.style.height = height + "px";
+  // bg.style.transform = "translateX(" + x + "px ) translateY(" + y + "px)";
 });
