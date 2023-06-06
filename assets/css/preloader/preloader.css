@@ -6,6 +6,7 @@
   position: fixed;
   z-index: 100000;
   transition: all 0.5s;
+  pointer-events: none;
   /** Global preloader styles **/
   /** Styles for individual preloaders **/
   /* Bow */

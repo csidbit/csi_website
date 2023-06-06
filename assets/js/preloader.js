@@ -23,6 +23,6 @@ window.addEventListener("load", function () {
     // Wait for the animation to finish and then hide the preloader
     setTimeout(function () {
       preloader.style.display = 'none';
-    }, 1000); // Wait for 1 second after the animation completes
-  }, 2000);
+    }, 500); // Wait for 1 second after the animation completes
+  }, 1000);
 });

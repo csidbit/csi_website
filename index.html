@@ -36,47 +36,21 @@
     <link href="assets/css/homeCss/home_Testimonial/homeTesti.css" rel="stylesheet">
     <link href="assets/css/homeCss/home_flagship/homeFs.css" rel="stylesheet">
     <link href="assets/css/homeCss/home_about/home_about.css" rel="stylesheet">
+    <link href="./assets/css/preloader/preloader.css" rel="stylesheet">
+    <link href="./assets/css/homeCss/homeAboutRework/homeAboutRework.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- Preloader -->
-    <div id="preloader" class=" HIDDEN">
-        <div id="container" class="container-preloader ">
-            <div class="animation-preloader ">
-                <div class="triangles ">
-                    <div class="triangle triangle--a">
-                        <div class="triangle__inner"></div>
-                    </div>
-                    <div class="triangle triangle--b">
-                        <div class="triangle__inner"></div>
-                    </div>
-                    <div class="triangle triangle--c">
-                        <div class="triangle__inner"></div>
-                    </div>
-                    <div class="triangle triangle--d">
-                        <div class="triangle__inner"></div>
-                    </div>
-                    <div class="triangle triangle--e">
-                        <div class="triangle__inner"></div>
-                    </div>
-                    <div class="triangle triangle--f">
-                        <div class="triangle__inner"></div>
-                    </div>
-                    <div class="triangle triangle--g">
-                        <div class="triangle__inner"></div>
-                    </div>
-                    <div class="triangle triangle--h">
-                        <div class="triangle__inner"></div>
-                    </div>
-                </div>
+    <!-- preloader -->
+    <div id="preloader" class="preloader">
+        <main>
+            <div class="cell">
+                <div class="pl pl-leapfrog"></div>
+                <div class="pl-name"><b>CSI DBIT</b></div>
             </div>
-            <div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
-        </div>
+        </main>
     </div>
-
     <!-- registration link  -->
     <div class="csi-registration">
 
@@ -166,76 +140,113 @@
             <div class="about">
 
                 <div class="about_container">
-                    <div class="about">
-                        <div class="about-box">
-                            <div id="slider" class="beer-slider" data-start="75">
-                                <div class="ctnr ctnr-winter">
-                                    <svg class="winter" width="100%" height="100%" viewBox="0 0 600 361"
-                                        preserveAspectRatio="xMidYMid slice" aria-labelledby="title1" aria-role="img">
-                                        <title id="title1">Baltic seashore -sepicol</title>
-                                        <image xlink:href="/assets/img/Slider/CSI_slider_2.webp" x="0" y="0"
-                                            width="100%" height="100%">
-                                        </image>
-                                    </svg>
-                                    <section class="b b2">
-                                        <h2>Computer Society Of India</h2>
-                                        <p> CSI takes great pride in being the largest and most professionally managed
-                                            association of student bodies and IT professionals in India. The Society is
-                                            scientifically and educationally directed towards the advancement of the
-                                            theory and practice of computer science and Information Technology in India
-                                        </p>
-                                    </section>
+                    <div class="container-fluid">
+                        <div class="homeAboutRework">
+                            <div class="bdt-timeline-container">
+                                <div class="upk-salf-slider-wrapper">
+                                    <div class="swiper-container mySwiper2">
+                                        <div class="swiper-wrapper">
+                                            <div class="upk-salf-item swiper-slide">
+                                                <div class="upk-salf-image-wrap">
+                                                    <img class="upk-xanc-img" src="./assets/img/Slider/culture.webp" />
+                                                </div>
+                                                <div class="upk-salf-content-wrap">
+                                                    <h3 class="upk-salf-title" data-swiper-parallax-y="-150"
+                                                        data-swiper-parallax-duration="1200">
+                                                        <span>C</span>ulture
+                                                    </h3>
+                                                    <div class="upk-salf-desc" data-swiper-parallax-y="-200"
+                                                        data-swiper-parallax-duration="1400">At our technical club, we
+                                                        foster a culture of continuous learning, providing opportunities
+                                                        for members to expand their knowledge and skills in various
+                                                        technical domains.</div>
+                                                </div>
+                                            </div>
 
-                                </div>
-                                <div class="beer-reveal">
-                                    <div class="ctnr ctnr-summer">
-                                        <svg width="100%" height="100%" viewBox="0 0 600 361"
-                                            preserveAspectRatio="xMidYMid slice" aria-labelledby="title2"
-                                            aria-role="img">
-                                            <title id="title2">Baltic seashore - warmshphere preset applied</title>
-                                            <image xlink:href="/assets/img/Slider/CSI_slider_1.webp" x="0" y="0"
-                                                width="100%" height="100%"></image>
-                                        </svg>
-                                        <section class="b b1">
-                                            <h2>DBIT's Best Student Chapter</h2>
-                                            <p>CSI DBIT is one of the leading student chapters of Don Bosco Institute Of
-                                                Technology, Mumbai. It has worked on conducting a varied number of
-                                                events, workshops and competitions that have proved to be of astounding
-                                                success, with only more to come.
-                                            </p>
+                                            <div class="upk-salf-item swiper-slide">
+                                                <div class="upk-salf-image-wrap">
+                                                    <img class="upk-xanc-img" src="./assets/img/Slider/support.webp" />
+                                                </div>
+                                                <div class="upk-salf-content-wrap">
+                                                    <h3 class="upk-salf-title" data-swiper-parallax-y="-150"
+                                                        data-swiper-parallax-duration="1200">
+                                                        <span>S</span>upport
+                                                    </h3>
+                                                    <div class="upk-salf-desc" data-swiper-parallax-y="-200"
+                                                        data-swiper-parallax-duration="1400">We strive to create a
+                                                        welcoming and inclusive environment within our club, ensuring
+                                                        that all members feel supported and valued in their pursuit of
+                                                        technical excellence.</div>
+                                                </div>
+                                            </div>
 
-                                        </section>
+                                            <div class="upk-salf-item swiper-slide">
+                                                <div class="upk-salf-image-wrap">
+                                                    <img class="upk-xanc-img"
+                                                        src="./assets/img/Slider/integration.webp" />
+                                                </div>
+                                                <div class="upk-salf-content-wrap">
+                                                    <h3 class="upk-salf-title" data-swiper-parallax-y="-150"
+                                                        data-swiper-parallax-duration="1200">
+                                                        <span>I</span>ntegration
+                                                    </h3>
+                                                    <div class="upk-salf-desc" data-swiper-parallax-y="-200"
+                                                        data-swiper-parallax-duration="1400">Integration is not just a
+                                                        buzzword for us—it's a core value. We embrace integration as a
+                                                        driving force behind our club's success, as we believe that
+                                                        diverse and integrated teams are capable of achieving remarkable
+                                                        things.</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="upk-page-scroll">
+                                        <a class="arrow-up">
+                                            <div class="long-arrow-left"></div>
+                                            <span class="arrow-slide"></span>
+                                        </a>
+                                    </div>
+                                    <div class="upk-salf-nav-pag-wrap">
 
+                                        <div class="upk-salf-navigation">
+                                            <div class="upk-button-prev upk-n-p">
+                                                <a class="link link--arrowed" href="#">
+                                                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg"
+                                                        width="28" height="28" viewBox="0 0 32 32">
+                                                        <g fill="none" stroke="#ff215a" stroke-width="1.5"
+                                                            stroke-linejoin="round" stroke-miterlimit="10">
+                                                            <circle class="arrow-icon--circle" cx="16" cy="16"
+                                                                r="15.12"></circle>
+                                                            <path class="arrow-icon--arrow"
+                                                                d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                                            </path>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="upk-button-next upk-n-p">
+                                                <a class="link link--arrowed" href="#">
+                                                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg"
+                                                        width="28" height="28" viewBox="0 0 32 32">
+                                                        <g fill="none" stroke="#ff215a" stroke-width="1.5"
+                                                            stroke-linejoin="round" stroke-miterlimit="10">
+                                                            <circle class="arrow-icon--circle" cx="16" cy="16"
+                                                                r="15.12"></circle>
+                                                            <path class="arrow-icon--arrow"
+                                                                d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98">
+                                                            </path>
+                                                        </g>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="upk-salf-pagi-wrap">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
-
-                            <div class="homeAboutContainer">
-                                <div class="home_about_text">
-                                    <p>
-                                        <strong>Computer Society of India</strong> is the first and largest body of
-                                        computer
-                                        professionals in India. It was started on 6 March 1965 by a few computer
-                                        professionals and has now grown to be the national body representing computer
-                                        professionals. It has <strong>72</strong> chapters across India,
-                                        <strong>511</strong> student branches, and
-                                        <strong>100,000</strong> members. The Computer Society of India is a non-profit
-                                        professional meet
-                                        to exchange views and information learn and share ideas.
-                                    </p>
-                                </div>
-                            </div>
-                            <svg class="homeAboutSvg">
-                                <defs>
-                                    <clipPath id="svgPath" clipPathUnits="objectBoundingBox"
-                                        transform="scale(0.00083 0.0075)">
-                                        <path
-                                            d="M1397,490H204c263,0,160-32,371-33,191.52-.91,150.49-135.14,225-92C990,475,1144,490,1397,490Z"
-                                            transform="translate(-178 -350.46)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
                         </div>
                     </div>
                     <div class="counts">
@@ -376,14 +387,14 @@
                                             <div class="homeEvents-date flex ">
                                                 <span class="homeEvents-date__title">13th - 14th</span>
                                                 <span class="hoeEvents-date__txt">March</span>
-                                            </div> 
+                                            </div>
                                             <div class="homeEvents__title">
                                                 Spark AR workshop
                                             </div>
 
                                             <p class="homeEvents__txt">
-                                                A workshop to teach you how to make your very own filters with ease 
-                                                <span class="text-light">hellooooooooooooo</span> 
+                                                A workshop to teach you how to make your very own filters with ease
+                                                <span class="text-light">hellooooooooooooo</span>
                                             </p>
                                             <div class="homeEvents__img">
                                                 <img src="/assets/img/workshops/sparkAR_card.webp" alt="news">
@@ -397,14 +408,15 @@
                                             <div class="homeEvents-date flex ">
                                                 <span class="homeEvents-date__title">23rd</span>
                                                 <span class="hoeEvents-date__txt">February</span>
-                                            </div> 
+                                            </div>
                                             <div class="homeEvents__title">
                                                 Node up your creativity
                                             </div>
 
                                             <p class="homeEvents__txt">
-                                                An exclusive workshop on building your own AI-driven image generator using Node.js and DALL-E:2 API.
-                                                <span class="text-light">hellooooooo</span> 
+                                                An exclusive workshop on building your own AI-driven image generator
+                                                using Node.js and DALL-E:2 API.
+                                                <span class="text-light">hellooooooo</span>
                                             </p>
                                             <div class="homeEvents__img">
                                                 <img src="/assets/img/workshops/nodejs_card.webp" alt="news">
@@ -499,6 +511,7 @@
                                             </div>
                                         </a>
                                     </div>
+
                                     <div class="homeEvents-slider__item swiper-slide">
                                         <a href="events_pages/mic-check.html" class="homeEvents__item">
                                             <div class="homeEvents-date flex ">
@@ -595,6 +608,26 @@
                                         </a>
 
                                     </div>
+                                    <div class="news-slider__item swiper-slide">
+                                        <a href="/encore.html" class="news__item">
+                                            <div class="news__img">
+                                                <img src="assets/img/logo's/Encore_bg.webp" alt="news">
+                                            </div>
+                                            <div class="news__title">
+                                                Encore
+                                            </div>
+
+                                            <p class="news__txt">
+                                                Encore is an intercollegiate Technical Paper Presentation Contest
+                                                organised by IT department of DBIT.
+
+                                                <div class="homefs-links">
+                                                    visit page
+                                                </div>
+                                            </p>
+
+                                        </a>
+                                    </div>
 
                                     <div class="news-slider__item swiper-slide">
                                         <a href="/gameOfCodes.html" class="news__item">
@@ -617,26 +650,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="news-slider__item swiper-slide">
-                                        <a href="/encore.html" class="news__item">
-                                            <div class="news__img">
-                                                <img src="assets/img/logo's/Encore_bg.webp" alt="news">
-                                            </div>
-                                            <div class="news__title">
-                                                Encore
-                                            </div>
 
-                                            <p class="news__txt">
-                                                Encore is an intercollegiate Technical Paper Presentation Contest
-                                                organised by IT department of DBIT.
-
-                                                <div class="homefs-links">
-                                                    visit page
-                                                </div>
-                                            </p>
-
-                                        </a>
-                                    </div>
                                 </div>
 
                                 <div class="news-slider__ctr">
@@ -671,6 +685,12 @@
             </div>
         </section>
         <!-- End Flagship Section -->
+
+        <section class="section-bg">
+            <div class="container">
+
+            </div>
+        </section>
 
         <!-- Testimonial section start  -->
         <section id="testimony">
@@ -1152,7 +1172,7 @@
                         class="php-email-form">
 
                         <!-- formsubmit custom inputs  -->
-                        <input type="hidden" name="_next" value="http://kuchnhi.netlify.app/formSuccess.html">
+                        <input type="hidden" name="_next" value="https://csi.dbit.in/thankyou.html">
                         <input type="hidden" name="_subject" value="New Submission on CSI Website">
                         <input type="text" name="_honey" style="display:none">
                         <input type="hidden" name="_autoresponse"
@@ -1291,13 +1311,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/dee439f8c1.js" crossorigin="anonymous"></script>
     <!-- Template Main JS File -->
-
     <script src="assets/js/preloader.js"></script>
-
     <script src="assets/js/homeJs/homeEvents.js"></script>
     <script src="assets/js/homeJs/homeTestimonial.js"></script>
-    <script src="assets/js/homeJs/homeAbout.js"></script>
     <script src="assets/js/homeJs/homeFs.js"></script>
+    <script src="assets/js/homeJs/homeAboutRework.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

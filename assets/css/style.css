@@ -738,7 +738,6 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding: 0.5rem;
-  background: white;
 }
 .about .content h3 {
   font-weight: 500;
@@ -802,7 +801,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  transform: translateY(-2rem);
+  /* transform: translateY(-2rem); */
 }
 .counts .count-box {
   box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
