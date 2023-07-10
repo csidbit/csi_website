@@ -398,7 +398,7 @@
 }
 .testimonial.style-3 .section-wrapper .testimonial-slider .testi-pagination span {
   display: inline-block;
-  background: url(/assets/img/testimonial/01.png) no-repeat center center;
+  background: url("/assets/img/team/2019/gaurav-jain.webp") no-repeat center center;
   background-size: cover;
   height: 50px;
   width: 50px;
@@ -414,12 +414,12 @@
     margin: 7px;
   }
 }
-.testimonial.style-3 .section-wrapper .testimonial-slider .testi-pagination span:nth-child(2) {
-  background-image: url(/assets/img/testimonial/02.png);
-}
 
+.testimonial.style-3 .section-wrapper .testimonial-slider .testi-pagination span:nth-child(2) {
+  background-image: url(/assets/img/testimonial/01.png);
+}
 .testimonial.style-3 .section-wrapper .testimonial-slider .testi-pagination span:nth-child(3) {
-  background-image: url(/assets/img/testimonial/04.png);
+  background-image: url("/assets/img/team/2019/jevina.webp");
 }
 
 .testimonial.style-3 .section-wrapper .testimonial-slider .testi-pagination span:nth-child(4) {
@@ -427,7 +427,7 @@
 }
 
 .testimonial.style-3 .section-wrapper .testimonial-slider .testi-pagination span:nth-child(5) {
-  background-image: url(/assets/img/testimonial/04.png);
+  background-image: url("/assets/img/team/2019/viraj-gaonkar.webp");
 }
 
 @media (min-width: 992px) {
