@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 0.94rem;
+  font-family: Poppins, Noto Sans, sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  background: #f8f8f8;
+}
+
+header img{
+  width: 20%;
+  height: 20%;
+}
+@media(max-width:800px){
+  header img{
+    width: 70%;
+    height: 70%;
+  }
+}
+header .header-desc{
+  transform: translateY(-2rem);
+}
+img[alt="Linktree photo"] + h3 {
+  margin: 16px 0 0px;
+}
+
+.linktree-nav {
+  margin: 0px auto 0;
+  width: 95%;
+  max-width: 700px;
+}
+
+.linktree-nav ul {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+.linktree-nav ul li:hover{
+    box-shadow:0px 0px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.linktree-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.linktree-box {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding: 12px 12px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.linktree-box .icon-box {
+  --scale: 56px;
+  width: var(--scale);
+  height: var(--scale);
+  font-size: 1.25rem;
+  background: hsl(var(--color), 30%);
+  color: hsl(var(--color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+@media (min-width: 600px) {
+  .linktree-nav ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
