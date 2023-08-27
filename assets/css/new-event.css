@@ -2829,6 +2829,9 @@ a.button:hover, a.button:focus {
     .navbar-mobile{
         position:static !important;
     }
+    .navbar-mobile ul {
+        height: fit-content;
+    }
     .events-ul{
         height: 90vh;
         z-index: 10000;
