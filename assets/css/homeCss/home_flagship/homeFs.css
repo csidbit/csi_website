@@ -105,7 +105,7 @@
   }
 }
 .homeFsCont .news-slider__item.swiper-slide {
-  opacity: 0;
+  /* opacity: 0; */
   pointer-events: none;
   transition: all 0.3s;
 }
@@ -219,6 +219,9 @@
 @media screen and (max-width: 992px) {
   .homeFsCont .news__item {
     padding: 30px;
+  }
+  .homeFsCont .news-slider__wrp {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 576px) {
