@@ -21,20 +21,44 @@ body {
   background: #f8f8f8;
 }
 
-header img{
+header img {
   width: 20%;
   height: 20%;
 }
-@media(max-width:800px){
-  header img{
+
+
+@media (min-width:620px) {
+  .yt-bg {
+    padding: 0 5px 0 5px;
+  }
+
+  .linked-in-bg {
+    padding: 0 8px 0 8px;
+  }
+}
+
+@media(max-width:420px) {
+  .linked-in-bg {
+    padding: 0 5px 0 5px;
+  }
+}
+
+@media(max-width:800px) {
+  header img {
     width: 70%;
     height: 70%;
   }
+
+  main {
+    margin-bottom: 2rem;
+  }
 }
-header .header-desc{
+
+header .header-desc {
   transform: translateY(-2rem);
 }
-img[alt="Linktree photo"] + h3 {
+
+img[alt="Linktree photo"]+h3 {
   margin: 16px 0 0px;
 }
 
@@ -50,10 +74,11 @@ img[alt="Linktree photo"] + h3 {
   list-style: none;
 }
 
-.linktree-nav ul li:hover{
-    box-shadow:0px 0px 50px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.linktree-nav ul li:hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
+
 .linktree-nav a {
   text-decoration: none;
   color: inherit;
@@ -87,4 +112,5 @@ img[alt="Linktree photo"] + h3 {
   .linktree-nav ul {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
