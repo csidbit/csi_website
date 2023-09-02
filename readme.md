@@ -22,7 +22,7 @@ At CSI DBIT, we are dedicated to promoting and enhancing technical knowledge and
 
 ### Visit Our Website
 
-You can access our official website at [https://www.csi.dbit.in](https://www.csi.dbit.in). Explore the website to find:
+You can access our official website at [csi.dbit.in](https://csi.dbit.in). Explore the website to find:
 
 - **Upcoming Events:** Stay updated on our latest events, workshops, and seminars.
 
