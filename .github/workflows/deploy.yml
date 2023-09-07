@@ -15,6 +15,6 @@ jobs:
 
     - name: Deploy to Remote Server
       run: |
-        ssh csi-client@128.199.23.207 'bash -s' ./temp.sh
+        ssh csi-client@128.199.23.207 'bash -s' cd csi_website_scripts ./temp.sh
       env:
         SERVER_SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
