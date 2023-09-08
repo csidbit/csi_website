@@ -27,6 +27,6 @@ jobs:
 
       - name: Deploy code to server
         run: |
-          ssh csi-client@128.199.23.207 'bash -s' < /home/csi-client/csi_website_scripts/temp.sh
+          ssh -o StrictHostKeyChecking=no csi-client@128.199.23.207 'bash -s' < /home/csi-client/csi_website_scripts/temp.sh
         env:
           SERVER_SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
