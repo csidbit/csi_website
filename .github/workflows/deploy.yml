@@ -1,20 +1,29 @@
-name: Deploy to CSI Server
+name: Deploy to Remote Server
 
 on:
   push:
     branches:
-      - master # or specify your branch name
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Deploy to Remote Server
-      run: |
-        ssh csi-client@128.199.23.207 'bash -s' cd csi_website_scripts ./temp.sh
-      env:
-        SERVER_SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SERVER_SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H 128.199.23.207 >> ~/.ssh/known_hosts
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+
+      - name: Deploy code to server
+        run: |
+          ssh csi-client@128.199.23.207 'bash -s' < csi_website_scripts/temp.sh
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
