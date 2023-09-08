@@ -16,17 +16,14 @@ jobs:
       - name: Set up SSH key
         run: |
           mkdir -p ~/.ssh
-          echo "$SERVER_SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H 128.199.23.207 >> ~/.ssh/known_hosts
-        env:
-          SERVER_SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
-      
-      - name: List files in working directory
-        run: ls -l
+          ssh-keyscan -t rsa -H $SSH_SERVER_HOST >> ~/.ssh/known_hosts
 
-      - name: Deploy code to server
+      - name: Deploy to Remote Server
         run: |
-          ssh csi-client@128.199.23.207 'bash -s' < csi_website_scripts/temp.sh
+          ssh -i ~/.ssh/id_rsa $SSH_SERVER_USER@$SSH_SERVER_HOST "bash -s" < $REMOTE_PATH
         env:
-          SERVER_SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_PRIVATE_KEY }}
+          SSH_SERVER_HOST: ${{ secrets.SSH_SERVER_HOST }}
+          SSH_SERVER_USER: ${{ secrets.SSH_SERVER_USER }}
+          REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
