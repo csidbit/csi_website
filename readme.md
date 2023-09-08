@@ -47,6 +47,7 @@ To become a part of the CSI DBIT community, you can:
   <a margin="1rem" target="blank" href="https://www.youtube.com/c/CSIDBIT" ><img src="./assets/readmeAssets/youtube.webp" alt="CSI DBIT Youtube" padding="0.5rem" height="30" width="30" /></a>
   <a margin="1rem" target="blank" href="https://www.facebook.com/csidbit/" ><img src="./assets/readmeAssets/facebook.webp" alt="CSI DBIT Facebook" padding="0.5rem" height="30" width="30" /></a>
 </p>
+
 ## Contributing
 
 We welcome contributions from members and the broader tech community. If you have ideas for new projects, workshops, or events, or if you'd like to contribute to our website repository, here's how you can get involved:
