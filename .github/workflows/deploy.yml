@@ -13,21 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up SSH key
-        run: |
-          echo "$SSH_PRIVATE_KEY" > ssh_key
-          chmod 600 ssh_key
-          eval $(ssh-agent -s)
-          ssh-add ssh_key
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-
       - name: Deploy to Server
         run: |
-         
-          SERVER_DIR="/var/www/csi_official_website"
-          cd "$SERVER_DIR"
-          ls
-
+          ssh deploy@your-server-ip "cd csi_website_scripts && ./temp.sh"
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
