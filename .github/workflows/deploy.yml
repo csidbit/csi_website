@@ -15,6 +15,9 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh -o StrictHostKeyChecking=no csi-client@128.199.23.207 "cd csi_website_scripts && ./temp.sh"
+          # Add the server's host key to known_hosts
+          ssh-keyscan your-server-ip >> $HOME/.ssh/known_hosts
+          # SSH into the server and run the deployment script
+          ssh csi-client@128.199.23.207 "cd csi_website_scripts && ./temp.sh"
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
