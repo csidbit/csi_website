@@ -1,4 +1,4 @@
-name: Deploy to Remote Server
+name: Deploy to Server
 
 on:
   push:
@@ -15,15 +15,19 @@ jobs:
 
       - name: Set up SSH key
         run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -t rsa -H $SSH_SERVER_HOST >> ~/.ssh/known_hosts
-
-      - name: Deploy to Remote Server
-        run: |
-          ssh -i ~/.ssh/id_rsa $SSH_SERVER_USER@$SSH_SERVER_HOST "bash -s" < $REMOTE_PATH
+          echo "$SSH_PRIVATE_KEY" > ssh_key
+          chmod 600 ssh_key
+          eval $(ssh-agent -s)
+          ssh-add ssh_key
         env:
-          SSH_SERVER_HOST: ${{ secrets.SSH_SERVER_HOST }}
-          SSH_SERVER_USER: ${{ secrets.SSH_SERVER_USER }}
-          REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to Server
+        run: |
+         
+          SERVER_DIR="/var/www/csi_official_website"
+          cd "$SERVER_DIR"
+          ls
+
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
