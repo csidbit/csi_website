@@ -14,11 +14,11 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Switch to staging branch
-      run: git checkout staging
+      run: git checkout stagging
 
     - name: Merge changes from master
       run: git merge master --no-edit
 
     - name: Push changes to staging branch
       run: |
-        git push origin staging
+        git push origin stagging
