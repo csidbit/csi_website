@@ -1,0 +1,24 @@
+name: Sync Staging with Master
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Switch to staging branch
+      run: git checkout staging
+
+    - name: Merge changes from master
+      run: git merge master --no-edit
+
+    - name: Push changes to staging branch
+      run: |
+        git push origin staging
