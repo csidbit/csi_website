@@ -20,13 +20,3 @@ jobs:
         script: |
           cd csi_website_scripts/
           ./csi-website-deployment-script.sh
-
-    - name: Switch to staging branch
-      run: git checkout staging
-
-    - name: Merge changes from master
-      run: git merge master --no-edit
-
-    - name: Push changes to staging branch
-      run: |
-        git push origin staging
