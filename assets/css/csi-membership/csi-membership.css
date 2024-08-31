@@ -1,0 +1,230 @@
+.csi-membership .membershipText {
+  height: 60vh;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  padding: 10rem;
+  font-size: xx-large;
+  color: #ccc;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .csi-membership .membershipText {
+    font-size: larger;
+    padding: 10rem 1rem;
+  }
+}
+.csi-membership .membershipText p {
+  font-size: x-large;
+}
+.csi-membership .membershipPricing {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+}
+@media (max-width: 768px) {
+  .csi-membership .membershipPricing {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+.csi-membership .membershipPricing .membershipBenefitsWrapper h1 {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.248);
+}
+.csi-membership .membershipPricing .membershipBenefitsWrapper .moreBenefits {
+  text-align: right;
+  padding: 0 3rem;
+  font-weight: bold;
+  font-size: large;
+}
+.csi-membership .membershipPricing .membershipBenefitsCont {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.csi-membership .membershipPricing .membershipBenefitsCont ul {
+  padding: 2rem;
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .csi-membership .membershipPricing .membershipBenefitsCont ul {
+    padding: 0.5rem;
+  }
+}
+.csi-membership .membershipPricing .membershipBenefitsCont ul li {
+  padding: 0.5rem 0;
+}
+.csi-membership .membershipPricing .membershipBenefitsCont ul li i {
+  color: green;
+  font-size: larger;
+}
+@media (max-width: 768px) {
+  .csi-membership .membershipPricing .membershipBenefitsCont ul li i {
+    font-size: medium;
+  }
+}
+.csi-membership .membershipPriceTable {
+  transform: translate(5rem, -18rem);
+}
+@media (max-width: 768px) {
+  .csi-membership .membershipPriceTable {
+    transform: translateY(0rem);
+  }
+}
+.csi-membership .membershipPriceTable .wrapper {
+  width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.248), -10px -10px 15px rgba(0, 0, 0, 0.253);
+}
+@media (max-width: 768px) {
+  .csi-membership .membershipPriceTable .wrapper {
+    width: 100%;
+  }
+}
+.csi-membership .membershipPriceTable .wrapper header {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  position: relative;
+}
+.csi-membership .membershipPriceTable header label {
+  height: 100%;
+  z-index: 2;
+  width: 30%;
+  display: flex;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+.csi-membership .membershipPriceTable #tab-1:checked ~ header .tab-1,
+.csi-membership .membershipPriceTable #tab-2:checked ~ header .tab-2,
+.csi-membership .membershipPriceTable #tab-3:checked ~ header .tab-3 {
+  color: #fff;
+}
+.csi-membership .membershipPriceTable header label:nth-child(2) {
+  width: 40%;
+}
+.csi-membership .membershipPriceTable header .slider {
+  position: absolute;
+  height: 85%;
+  border-radius: inherit;
+  background: linear-gradient(145deg, #D5A3FF 0%, #77A5F8 100%);
+  transition: all 0.3s ease;
+}
+.csi-membership .membershipPriceTable #tab-1:checked ~ header .slider {
+  left: 0%;
+  width: 90px;
+  transform: translateX(5%);
+}
+.csi-membership .membershipPriceTable #tab-2:checked ~ header .slider {
+  left: 50%;
+  width: 120px;
+  transform: translateX(-50%);
+}
+.csi-membership .membershipPriceTable #tab-3:checked ~ header .slider {
+  left: 100%;
+  width: 95px;
+  transform: translateX(-105%);
+}
+.csi-membership .membershipPriceTable .wrapper input[type=radio] {
+  display: none;
+}
+.csi-membership .membershipPriceTable .card-area {
+  overflow: hidden;
+}
+.csi-membership .membershipPriceTable .card-area .cards {
+  display: flex;
+  width: 300%;
+}
+.csi-membership .membershipPriceTable .cards .row {
+  width: 33.4%;
+}
+.csi-membership .membershipPriceTable .cards .row-1 {
+  transition: all 0.3s ease;
+}
+.csi-membership .membershipPriceTable #tab-1:checked ~ .card-area .cards .row-1 {
+  margin-left: 0.5%;
+}
+.csi-membership .membershipPriceTable #tab-2:checked ~ .card-area .cards .row-1 {
+  margin-left: -31.4%;
+}
+.csi-membership .membershipPriceTable #tab-3:checked ~ .card-area .cards .row-1 {
+  margin-left: -62.8%;
+}
+.csi-membership .membershipPriceTable .row .price-details {
+  margin: 20px 0;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.csi-membership .membershipPriceTable .price-details .price {
+  font-size: 65px;
+  font-weight: 600;
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+}
+.csi-membership .membershipPriceTable .price-details .price::before,
+.csi-membership .membershipPriceTable .price-details .price::after {
+  position: absolute;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.csi-membership .membershipPriceTable .price-details .price::after {
+  content: "/year";
+  right: -33px;
+  bottom: 17px;
+  font-size: 13px;
+}
+.csi-membership .membershipPriceTable .price-details p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.csi-membership .membershipPriceTable .row .features li {
+  display: flex;
+  font-size: 15px;
+  list-style: none;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.csi-membership .membershipPriceTable .features li i {
+  background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.csi-membership .membershipPriceTable .features li span {
+  margin-left: 10px;
+}
+.csi-membership .membershipPriceTable .joinDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.csi-membership .membershipPriceTable .wrapper a {
+  width: 100%;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  margin: auto;
+  background: linear-gradient(145deg, #D5A3FF 0%, #77A5F8 100%);
+  transition: transform 0.3s ease;
+}
+.csi-membership .membershipPriceTable .wrapper a:hover {
+  transform: scale(0.98);
+}/*# sourceMappingURL=csi-membership.css.map */
