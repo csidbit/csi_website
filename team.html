@@ -71,8 +71,10 @@
       document.addEventListener('DOMContentLoaded', function() {
         // Simulate click on the "2024" button
         const tab2024Button = document.getElementById('pills-2024-tab');
+        const tab2023Button = document.getElementById('pills-2023-tab');
         if (tab2024Button) {
           tab2024Button.click(); // Simulate the click
+          tab2023Button.hidden
         }
       });
     </script>
@@ -519,7 +521,7 @@
             </div>
 
             <div
-              class="tab-pane fade show active"
+              class="tab-pane fade "
               id="pills-2023"
               role="tabpanel"
               aria-labelledby="pills-2023-tab"
@@ -897,7 +899,7 @@
               </div>
             </div>
             <div
-              class="tab-pane fade show active"
+              class="tab-pane fade "
               id="pills-2022"
               role="tabpanel"
               aria-labelledby="pills-2022-tab"
