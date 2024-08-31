@@ -64,6 +64,20 @@
   </head>
 
   <body>
+
+    <script>
+      // when page reloads auto selects the 2024 button which solves a bug where the other button were getting a bit issue when page is reloaded
+      // JavaScript to simulate a button click on page load
+      document.addEventListener('DOMContentLoaded', function() {
+        // Simulate click on the "2024" button
+        const tab2024Button = document.getElementById('pills-2024-tab');
+        if (tab2024Button) {
+          tab2024Button.click(); // Simulate the click
+        }
+      });
+    </script>
+
+
     <!-- preloader -->
     <div id="preloader" class="preloader">
       <main>
@@ -313,7 +327,7 @@
           <div class="tab-content" id="pills-tabContent">
 
             <div 
-              class="tab-pane show fade active"
+              class="tab-pane fade show active"
               id="pills-2024"
               role="tabpanel"
               aria-labelledby="pills-2024-tab"
@@ -505,7 +519,7 @@
             </div>
 
             <div
-              class="tab-pane fade active"
+              class="tab-pane fade show active"
               id="pills-2023"
               role="tabpanel"
               aria-labelledby="pills-2023-tab"
@@ -883,7 +897,7 @@
               </div>
             </div>
             <div
-              class="tab-pane fade"
+              class="tab-pane fade show active"
               id="pills-2022"
               role="tabpanel"
               aria-labelledby="pills-2022-tab"
