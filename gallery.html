@@ -194,7 +194,9 @@
 			if (clickableSpan) {
 				
 				if (additionalSpansContainer.style.display === "none" || additionalSpansContainer.style.display === "") {
+				additionalSpansContainer.style.transition = "display 0.5s ease-in-out";
 				additionalSpansContainer.style.display = "block";
+
 				} else {
 				additionalSpansContainer.style.display = "none";
 				}
@@ -223,6 +225,7 @@
 
 
 		}
+		
 		  </script>
 
 		<div class="page-wraper">
@@ -238,7 +241,7 @@
 
 							<!-- Additional spans to show/hide -->
 							<div id="additional-spans" style="display: none; margin-top: 10px;">
-								<span data-filter=".GitandGithub" class="additional-span">GitandGithub</span>
+								<span data-filter=".GitandGithub" class="additional-span">Git & Github</span>
 								<span data-filter=".NextCloud" class="additional-span">NextCloud</span>
 								<span data-filter=".WebDev" class="additional-span">WebDev</span>
 							</div>
