@@ -967,7 +967,7 @@ section {
 --------------------------------------------------------------*/
 .cta {
   background: linear-gradient(rgba(66, 84, 81, 0.5), rgba(43, 56, 54, 0.5)),
-    url("/assets/img/Slider/cta_background.webp") fixed center center;
+    url("/assets/img/Slider/cta_background2.webp") fixed center center;
   background-size: cover;
   padding: 20rem 0;
 }
