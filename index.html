@@ -42,6 +42,7 @@
 
     <style>
 
+         /* right side contact box */
         .contact-box {
             position: fixed;
             right: 0;
@@ -104,7 +105,7 @@
             cursor: pointer;
         }
     
-            /* Modal Image Styling */
+            /* Modal for csi events plan image */
         .modal-content img {
             width: 100%;
         }
@@ -112,6 +113,65 @@
         .modal-body img {
             border-radius: 10px;
         }
+
+
+        /* Floating Status Bubble */
+        .status-bubble {
+            position: fixed;
+            top: 25px;
+            right: 20px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+            z-index: 99999;
+        }
+
+        /* Green Glow (Operational) */
+        .status-operational {
+            background-color: #28a745;
+            box-shadow: 0 0 20px rgba(40, 167, 69, 1);
+        }
+
+        /* Red Glow (Not Operational) */
+        .status-not-operational {
+            background-color: #dc3545;
+            box-shadow: 0 0 20px rgba(220, 53, 69, 1);
+        }
+
+        /* Hover Effect - Glow with a different color */
+        .status-operational:hover {
+            box-shadow: 0 0 25px rgba(0, 255, 0, 1); /* Brighter Green */
+        }
+
+        .status-not-operational:hover {
+            box-shadow: 0 0 25px rgba(255, 69, 69, 1); /* Brighter Red */
+        }
+
+        /* Tooltip for Status */
+        .status-tooltip {
+            position: fixed;
+            top: 20px;
+            right: 60px;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateX(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 100000;
+        }
+
+        /* Show Tooltip when Hovering */
+        .status-bubble:hover + .status-tooltip {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
 </style>
 
         
@@ -147,6 +207,37 @@
 
 
 
+
+
+
+    <!-- Floating Status Bubble -->
+    <div>
+        <div id="statusBubble" class="status-bubble status-operational"></div>
+        <div id="statusTooltip" class="status-tooltip">CSI is Operational</div>
+    </div>
+
+    <script>
+        // Function to manually update the status
+        function setStatus(isOperational) {
+            let bubble = document.getElementById('statusBubble');
+            let tooltip = document.getElementById('statusTooltip');
+
+            if (isOperational) {
+                bubble.classList.add('status-operational');
+                bubble.classList.remove('status-not-operational');
+                tooltip.textContent = 'CSI is Operational';
+            } else {
+                bubble.classList.add('status-not-operational');
+                bubble.classList.remove('status-operational');
+                tooltip.textContent = 'CSI is Not Operational';
+            }
+        }
+
+        // Example: Setting the status manually (change true/false as needed)
+        setStatus(true); // CSI is Operational
+        // setStatus(false); // Uncomment to set CSI as Not Operational
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -509,26 +600,74 @@
                             <div class="homeEvents-slider">
                                 <div class="homeEvents-slider__wrp swiper-wrapper">
 
-
-
+                                    
                                     <div class="homeEvents-slider__item swiper-slide">
-                                        <a href="./events_pages/Gen_AI_2024.html" class="homeEvents__item">
+                                        <a href="./events_pages/Canva_Bootcamp_2025.html" class="homeEvents__item">
                                             <div class="homeEvents-date flex ">
-                                                <span class="homeEvents-date__title">4th</span>
-                                                <span class="hoeEvents-date__txt">September 2024</span>
+                                                <span class="homeEvents-date__title">12th</span>
+                                                <span class="hoeEvents-date__txt">March 2025</span>
                                             </div>
                                             <div class="homeEvents__title">
-                                                Web Dev Series
+                                                Canva Bootcamp
                                             </div>
 
                                             <p class="homeEvents__txt">
-                                                Transforming ideas into reality with HTML, CSS, and JavaScript.
+                                                A hands-on bootcamp on Canva, unlocking creativity and design potential.
+                                                <span class="text-light">hellooooooooooooo</span>
+                                                <span class="text-light">hellooooooooooooo</span>
+
+                                            </p>
+                                            <div style="background: linear-gradient(0deg, rgb(233 224 213), rgb(90 67 45));" class="homeEvents__img">
+                                                <img style=" border-radius: 0; display: block;  margin-left: auto; margin-right: auto; width:150px;" src="/assets/img/workshops/Canva_Bootcamp_2025.webp" alt="news">
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+                                    <div class="homeEvents-slider__item swiper-slide">
+                                        <a href="./events_pages/AI_Blockchain_2025.html" class="homeEvents__item">
+                                            <div class="homeEvents-date flex ">
+                                                <span class="homeEvents-date__title">4th</span>
+                                                <span class="hoeEvents-date__txt">March 2025</span>
+                                            </div>
+                                            <div class="homeEvents__title">
+                                                AI x Blockchain
+                                            </div>
+
+                                            <p class="homeEvents__txt">
+                                                A two days handson workshop on AI and Blockchain.
+                                                <span class="text-light">hellooooooooooooo</span>
+                                                <span class="text-light">hellooooooooooooo</span>
+
+                                            </p>
+                                            <div style="background: linear-gradient(0deg, rgb(82 193 237), rgb(14 14 44));" class="homeEvents__img">
+                                                <img style=" border-radius: 0; display: block;  margin-left: auto; margin-right: auto; width:150px;" src="/assets/img/workshops/AI_Blockchain_2025.webp" alt="news">
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+
+                                    <div class="homeEvents-slider__item swiper-slide">
+                                        <a href="./events_pages/Gen_AI_2025.html" class="homeEvents__item">
+                                            <div class="homeEvents-date flex ">
+                                                <span class="homeEvents-date__title">12th</span>
+                                                <span class="hoeEvents-date__txt">February 2025</span>
+                                            </div>
+                                            <div class="homeEvents__title">
+                                                Gen AI & LLMs Talk
+                                            </div>
+
+                                            <p class="homeEvents__txt">
+                                                Empowering innovation through Generative AI and Large Language Models.
                                                 <span class="text-light">hellooooooooooooo</span>
                                                 <span class="text-light">hellooooooooooooo</span>
 
                                             </p>
                                             <div style="background: linear-gradient(0deg, rgb(82 193 237), rgb(33 39 125));" class="homeEvents__img">
-                                                <img style="display: block;  margin-left: auto; margin-right: auto; width:150px;" src="/assets/img/workshops/Gen_AI_2025.webp" alt="news">
+                                                <img style=" border-radius: 0; display: block;  margin-left: auto; margin-right: auto; width:150px;" src="/assets/img/workshops/Gen_AI_2025.webp" alt="news">
                                             </div>
                                         </a>
                                     </div>
