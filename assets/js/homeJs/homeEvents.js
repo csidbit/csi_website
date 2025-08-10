@@ -37,6 +37,7 @@ var swiper = new Swiper(".homeEvents-slider", {
   grabCursor: true,
   loop: true,
   centeredSlides: true,
+  initialSlide: 1,
   keyboard: true,
   spaceBetween: 0,
   slidesPerView: "auto",
