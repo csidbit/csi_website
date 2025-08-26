@@ -171,62 +171,50 @@
 		</section>
 		<!-- Breadcrumbs Section -->
 
-		<script>
-		function toggleAdditionalSpans() {
-			const additionalSpansContainer = document.getElementById('additional-spans');
-			const clickableSpanall = document.getElementById('all');
-			const clickableSpan = document.getElementById('2024');
-			const clickableSpan2 = document.getElementById('2023');
-			const clickableSpan3 = document.getElementById('2022');
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const spans2024 = document.getElementById('additional-spans');
+    const spans2025 = document.getElementById('additional-spans-2025');
 
-			
+    const clickableAll = document.getElementById('all');
+    const clickable2025 = document.getElementById('2025');
+    const clickable2024 = document.getElementById('2024');
+    const clickable2023 = document.getElementById('2023');
+    const clickable2022 = document.getElementById('2022');
 
-			clickableSpanall.addEventListener('click', () => {
-			if (additionalSpansContainer.style.display === "block" || additionalSpansContainer.style.display === "") {
-			  additionalSpansContainer.style.display = "none";
-			} else {
-			  additionalSpansContainer.style.display = "none";
-			}
-		  }
-		  );
+    // ALL → hide both
+    clickableAll.addEventListener('click', () => {
+        spans2024.style.display = "none";
+        spans2025.style.display = "none";
+    });
 
+    // 2025 → toggle its div, hide 2024
+    clickable2025.addEventListener('click', () => {
+        spans2024.style.display = "none";
+        spans2025.style.display = (spans2025.style.display === "block") ? "none" : "block";
+    });
 
-			if (clickableSpan) {
-				
-				if (additionalSpansContainer.style.display === "none" || additionalSpansContainer.style.display === "") {
-				additionalSpansContainer.style.transition = "display 0.5s ease-in-out";
-				additionalSpansContainer.style.display = "block";
+    // 2024 → toggle its div, hide 2025
+    clickable2024.addEventListener('click', () => {
+        spans2025.style.display = "none";
+        spans2024.style.display = (spans2024.style.display === "block") ? "none" : "block";
+    });
 
-				} else {
-				additionalSpansContainer.style.display = "none";
-				}
-			}
-		
-		  
+    // 2023 → hide both
+    clickable2023.addEventListener('click', () => {
+        spans2024.style.display = "none";
+        spans2025.style.display = "none";
+    });
 
-		  clickableSpan2.addEventListener('click', () => {
-			if (additionalSpansContainer.style.display === "block" || additionalSpansContainer.style.display === "") {
-			  additionalSpansContainer.style.display = "none";
-			} else {
-			  additionalSpansContainer.style.display = "none";
-			}
-		  }
-
-		  );
-
-		  clickableSpan3.addEventListener('click', () => {
-			if (additionalSpansContainer.style.display === "block" || additionalSpansContainer.style.display === "") {
-			  additionalSpansContainer.style.display = "none";
-			} else {
-			  additionalSpansContainer.style.display = "none";
-			}
-		  }
-		  );
+    // 2022 → hide both
+    clickable2022.addEventListener('click', () => {
+        spans2024.style.display = "none";
+        spans2025.style.display = "none";
+    });
+});
+</script>
 
 
-		}
-		
-		  </script>
 
 		<div class="page-wraper">
 
@@ -236,24 +224,33 @@
 				<div class="breadcrumb-row">
 					<div class="container">
 						<div class="filtering col-sm-12 text-center">
-							<span id ="all" data-filter="*" class="active">All</span>
-							<span id="2024" data-filter=".2024" class="clickable-span" onclick="toggleAdditionalSpans()">2024</span>
+    <span id="all" data-filter="*" class="active">All</span>
+    <span id="2025" data-filter=".2025" class="clickable-span">2025</span>
+    <span id="2024" data-filter=".2024" class="clickable-span">2024</span>
+    <span id="2023" data-filter=".2023">2023</span>
+    <span id="2022" data-filter=".2022">2022</span>
+    <!-- <span data-filter=".2021">2021</span>
+    <span data-filter=".2020">2020</span>
+    <span data-filter=".2019">2019</span> -->
 
-							<!-- Additional spans to show/hide -->
-							
-							<span id="2023" data-filter=".2023" class="">2023</span>
-							<span id="2022" data-filter=".2022" class="">2022</span>
-							<!-- <span data-filter=".2021" class="">2021</span>
-							<span data-filter=".2020" class="">2020</span>
-							<span data-filter=".2019" class="">2019</span> -->
-							<div id="additional-spans" style="display: none; margin-top: 10px;">
-								<span data-filter=".GitandGithub" class="additional-span">Git & Github</span>
-								<span data-filter=".NextCloud" class="additional-span">NextCloud</span>
-								<span data-filter=".WebDev" class="additional-span">WebDev</span>
-								<span data-filter=".GenAi" class="additional-span">GenAi</span>
-							</div>
-							
-						</div>
+    <!-- subcategories for 2025 -->
+<div id="additional-spans-2025" style="display: none; margin-top: 10px;">
+    <span data-filter=".GitandGithub2025" class="additional-span">Git & Github</span>
+    <span data-filter=".WebDesignAndHosting2025" class="additional-span">Web Design & Hosting</span>
+    <span data-filter=".SQLxJDBC2025" class="additional-span">SQL x JDBC</span>
+    <span data-filter=".GenAi2025" class="additional-span">GenAI</span>
+</div>
+
+
+    <!-- subcategories for 2024 -->
+    <div id="additional-spans" style="display: none; margin-top: 10px;">
+        <span data-filter=".GitandGithub" class="additional-span">Git & Github</span>
+        <span data-filter=".NextCloud" class="additional-span">NextCloud</span>
+        <span data-filter=".WebDev" class="additional-span">WebDev</span>
+        <span data-filter=".GenAi" class="additional-span">GenAi</span>
+    </div>
+</div>
+
 					</div>
 				</div>
 				<!-- Breadcrumb row END -->
@@ -267,6 +264,474 @@
 								<ul id="masonry" class="ttr-gallery-listing magnific-image row"
 									style="list-style: none;">
 
+<!-- ========================= 2025 photo ========================== -->
+
+<!-- Git and Github -->
+ <li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GitandGithub2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GitAndGitHub/1.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GitAndGitHub/1.jpeg"
+                       class="magnific-anchor" title="Git & Github 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+ <li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GitandGithub2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GitAndGitHub/2.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GitAndGitHub/2.jpeg"
+                       class="magnific-anchor" title="Git & Github 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+ <li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GitandGithub2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GitAndGitHub/3.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GitAndGitHub/3.jpeg"
+                       class="magnific-anchor" title="Git & Github 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+ <li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GitandGithub2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GitAndGitHub/4.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GitAndGitHub/4.jpeg"
+                       class="magnific-anchor" title="Git & Github 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+ <li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GitandGithub2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GitAndGitHub/5.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GitAndGitHub/5.jpeg"
+                       class="magnific-anchor" title="Git & Github 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+ <li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GitandGithub2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GitAndGitHub/6.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GitAndGitHub/6.jpeg"
+                       class="magnific-anchor" title="Git & Github 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+ <li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GitandGithub2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GitAndGitHub/7.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GitAndGitHub/7.jpeg"
+                       class="magnific-anchor" title="Git & Github 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<!-- Web Design & Hosting -->
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 WebDesignAndHosting2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/WebDesignAndHosting/1.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/WebDesignAndHosting/1.jpeg"
+                       class="magnific-anchor" title="Web Design & Hosting 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 WebDesignAndHosting2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/WebDesignAndHosting/2.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/WebDesignAndHosting/2.jpeg"
+                       class="magnific-anchor" title="Web Design & Hosting 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 WebDesignAndHosting2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/WebDesignAndHosting/3.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/WebDesignAndHosting/3.jpeg"
+                       class="magnific-anchor" title="Web Design & Hosting 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 WebDesignAndHosting2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/WebDesignAndHosting/4.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/WebDesignAndHosting/4.jpeg"
+                       class="magnific-anchor" title="Web Design & Hosting 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 WebDesignAndHosting2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/WebDesignAndHosting/5.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/WebDesignAndHosting/5.jpeg"
+                       class="magnific-anchor" title="Web Design & Hosting 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 WebDesignAndHosting2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/WebDesignAndHosting/6.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/WebDesignAndHosting/6.jpeg"
+                       class="magnific-anchor" title="Web Design & Hosting 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 WebDesignAndHosting2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/WebDesignAndHosting/7.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/WebDesignAndHosting/7.jpeg"
+                       class="magnific-anchor" title="Web Design & Hosting 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<!-- <li class="action-card col-lg-3 col-md-4 col-sm-6 2025 WebDesignAndHosting2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/WebDesignAndHosting/8.mp4" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/WebDesignAndHosting/8.mp4"
+                       class="magnific-anchor" title="Web Design & Hosting 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li> -->
+
+<!-- SQL x JDBC -->
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 SQLxJDBC2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/SQLxJDBC/1.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/SQLxJDBC/1.jpeg"
+                       class="magnific-anchor" title="SQL x JDBC 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 SQLxJDBC2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/SQLxJDBC/2.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/SQLxJDBC/2.jpeg"
+                       class="magnific-anchor" title="SQL x JDBC 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 SQLxJDBC2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/SQLxJDBC/3.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/SQLxJDBC/3.jpeg"
+                       class="magnific-anchor" title="SQL x JDBC 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 SQLxJDBC2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/SQLxJDBC/4.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/SQLxJDBC/4.jpeg"
+                       class="magnific-anchor" title="SQL x JDBC 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 SQLxJDBC2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/SQLxJDBC/5.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/SQLxJDBC/5.jpeg"
+                       class="magnific-anchor" title="SQL x JDBC 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 SQLxJDBC2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/SQLxJDBC/6.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/SQLxJDBC/6.jpeg"
+                       class="magnific-anchor" title="SQL x JDBC 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 SQLxJDBC2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/SQLxJDBC/7.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/SQLxJDBC/7.jpeg"
+                       class="magnific-anchor" title="SQL x JDBC 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 SQLxJDBC2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/SQLxJDBC/8.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/SQLxJDBC/8.jpeg"
+                       class="magnific-anchor" title="SQL x JDBC 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<!-- Gen Ai -->
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GenAi2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GenAI/1.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GenAI/1.jpeg"
+                       class="magnific-anchor" title="GenAI 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GenAi2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GenAI/2.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GenAI/2.jpeg"
+                       class="magnific-anchor" title="GenAI 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GenAi2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GenAI/3.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GenAI/3.jpeg"
+                       class="magnific-anchor" title="GenAI 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2025 GenAi2025">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2025/GenAI/4.jpeg" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2025/GenAI/4.jpeg"
+                       class="magnific-anchor" title="GenAI 2025">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
 <!-- ========================= 2024 photo ========================== -->
 									
 
