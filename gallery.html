@@ -175,41 +175,55 @@
 document.addEventListener("DOMContentLoaded", function () {
     const spans2024 = document.getElementById('additional-spans');
     const spans2025 = document.getElementById('additional-spans-2025');
+	const spans2026 = document.getElementById('additional-spans-2026');
 
     const clickableAll = document.getElementById('all');
+	const clickable2026 = document.getElementById('2026');
     const clickable2025 = document.getElementById('2025');
     const clickable2024 = document.getElementById('2024');
     const clickable2023 = document.getElementById('2023');
     const clickable2022 = document.getElementById('2022');
 
-    // ALL → hide both
+	// ALL → hide all year subfilters
     clickableAll.addEventListener('click', () => {
         spans2024.style.display = "none";
         spans2025.style.display = "none";
+		spans2026.style.display = "none";
     });
 
-    // 2025 → toggle its div, hide 2024
+	// 2026 → toggle its div, hide 2024 and 2025
+	clickable2026.addEventListener('click', () => {
+		spans2024.style.display = "none";
+		spans2025.style.display = "none";
+		spans2026.style.display = (spans2026.style.display === "block") ? "none" : "block";
+	});
+
+	// 2025 → toggle its div, hide 2024 and 2026
     clickable2025.addEventListener('click', () => {
         spans2024.style.display = "none";
+		spans2026.style.display = "none";
         spans2025.style.display = (spans2025.style.display === "block") ? "none" : "block";
     });
 
-    // 2024 → toggle its div, hide 2025
+	// 2024 → toggle its div, hide 2025 and 2026
     clickable2024.addEventListener('click', () => {
         spans2025.style.display = "none";
+		spans2026.style.display = "none";
         spans2024.style.display = (spans2024.style.display === "block") ? "none" : "block";
     });
 
-    // 2023 → hide both
+	// 2023 → hide all
     clickable2023.addEventListener('click', () => {
         spans2024.style.display = "none";
         spans2025.style.display = "none";
+		spans2026.style.display = "none";
     });
 
-    // 2022 → hide both
+	// 2022 → hide all
     clickable2022.addEventListener('click', () => {
         spans2024.style.display = "none";
         spans2025.style.display = "none";
+		spans2026.style.display = "none";
     });
 });
 </script>
@@ -225,6 +239,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					<div class="container">
 						<div class="filtering col-sm-12 text-center">
     <span id="all" data-filter="*" class="active">All</span>
+	<span id="2026" data-filter=".2026" class="clickable-span">2026</span>
     <span id="2025" data-filter=".2025" class="clickable-span">2025</span>
     <span id="2024" data-filter=".2024" class="clickable-span">2024</span>
     <span id="2023" data-filter=".2023">2023</span>
@@ -232,6 +247,11 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- <span data-filter=".2021">2021</span>
     <span data-filter=".2020">2020</span>
     <span data-filter=".2019">2019</span> -->
+
+    <!-- subcategories for 2026 -->
+<div id="additional-spans-2026" style="display: none; margin-top: 10px;">
+    <span data-filter=".AgenticAI2026" class="additional-span">Agentic AI</span>
+</div>
 
     <!-- subcategories for 2025 -->
 <div id="additional-spans-2025" style="display: none; margin-top: 10px;">
@@ -268,6 +288,242 @@ document.addEventListener("DOMContentLoaded", function () {
 								<ul id="masonry" class="ttr-gallery-listing magnific-image row"
 									style="list-style: none;">
 
+<!-- ========================= 2025 photo ========================== -->
+
+<!-- Agentic AI -->
+ <li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/1.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/1.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/2.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/2.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/3.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/3.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/4.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/4.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/5.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/5.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/6.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/6.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/7.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/7.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/8.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/8.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/9.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/9.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/10.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/10.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/11.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/11.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/12.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/12.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="action-card col-lg-3 col-md-4 col-sm-6 2026 AgenticAI2026">
+    <div class="ttr-box portfolio-bx">
+        <div class="ttr-media media-ov2 media-effect">
+            <a href="javascript:void(0);">
+                <img src="/assets/img/gallery/2026/AgenticAI/13.webp" loading="lazy">
+            </a>
+            <div class="ov-box">
+                <div class="overlay-icon align-m">
+                    <a href="/assets/img/gallery/2026/AgenticAI/13.webp"
+                       class="magnific-anchor" title="Agentic AI 2026">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
 <!-- ========================= 2025 photo ========================== -->
 
 <!-- Git and Github -->
